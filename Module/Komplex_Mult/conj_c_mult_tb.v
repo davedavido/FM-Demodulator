@@ -11,15 +11,15 @@ module conj_c_mult_tb;
 
   reg start_i;
 
-  integer			fd_i, fd_o;
+  integer			fd_i_real, fd_i_imag, fd_o;
 
   reg 				tmp;
 
   // Instanz des zu testenden Moduls
-  avg_128 #(.WIDTH(WIDTH)) DUT (
+  conj_c_mult #(.WIDTH(WIDTH)) DUT (
     .clk(clk),
     .rst(rst),
-	.start_i(start_i)
+	.start_i(start_i),
     .real_i (real_i),
     .imag_i(imag_i),
     .demod_o(demod_o)
@@ -31,13 +31,13 @@ always
 initial begin
 	fd_i_real = $fopen("Real.txt", "r");
 	fd_i_imag = $fopen("Imag.txt", "r");
-	fd_o = $fopen("Output.txt", "w");
+	fd_o = $fopen("Output_Demod.txt", "w");
 	
-	if (fd_i_real)     $display("File was opened successfully : %0d", fd_i);
-    else      	  $display("File was NOT opened successfully : %0d", fd_i);
+	if (fd_i_real)     $display("File was opened successfully : %0d", fd_i_real);
+    else      	  $display("File was NOT opened successfully : %0d", fd_i_real);
 	
-	if (fd_i_imag)     $display("File was opened successfully : %0d", fd_i);
-    else      	  $display("File was NOT opened successfully : %0d", fd_i);
+	if (fd_i_imag)     $display("File was opened successfully : %0d", fd_i_imag);
+    else      	  $display("File was NOT opened successfully : %0d", fd_i_imag);
 
     if (fd_o)     $display("File was opened successfully : %0d", fd_o);
     else      	  $display("File was NOT opened successfully : %0d", fd_o);

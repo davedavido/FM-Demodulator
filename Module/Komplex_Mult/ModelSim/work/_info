@@ -1,0 +1,57 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/David/Documents/GitHub/FM-Demodulator/Module/Averaging/ModelSim
+vconj_c_mult
+Z0 !s110 1678550617
+!i10b 1
+!s100 PT]l;bWb=Dm2YX`FdY<8C0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IQY`KeM40_dcezKjE2=Ia32
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Users/David/Documents/GitHub/FM-Demodulator/Module/Komplex_Mult/ModelSim
+w1678550575
+8C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Komplex_Mult/conj_c_mult.v
+FC:/Users/David/Documents/GitHub/FM-Demodulator/Module/Komplex_Mult/conj_c_mult.v
+!i122 38
+L0 1 66
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1678550617.000000
+!s107 C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Komplex_Mult/conj_c_mult.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Komplex_Mult/conj_c_mult.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+vconj_c_mult_tb
+R0
+!i10b 1
+!s100 I[c5RD@>:iU`_EoG?USi]1
+R1
+ISS5aVFnJ6ifLE:cK2m7DB0
+R2
+R3
+w1678546204
+8C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Komplex_Mult/conj_c_mult_tb.v
+FC:/Users/David/Documents/GitHub/FM-Demodulator/Module/Komplex_Mult/conj_c_mult_tb.v
+!i122 39
+L0 1 72
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Komplex_Mult/conj_c_mult_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Komplex_Mult/conj_c_mult_tb.v|
+!i113 1
+R6
+R7
