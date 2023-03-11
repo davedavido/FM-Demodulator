@@ -2,7 +2,7 @@ module avg_128_tb;
 
   // Parameter
   parameter WIDTH = 16;
-  parameter SAMPLES = 3;
+  parameter SAMPLES = 128;
 
   // Signale
   reg               clk;
@@ -29,21 +29,21 @@ always
 	#1 	clk=!clk;
 	 
 initial begin
-	fd_i = $fopen("/Users/dave/Documents/FM-Demodulator/Module/Averaging/testdata.txt", "r");
-	fd_o = $fopen("/Users/dave/Documents/FM-Demodulator/Module/Averaging/result_verilog.txt", "w");
+	fd_i = $fopen("Input.txt", "r");
+	fd_o = $fopen("Output.txt", "w");
 	
 	if (fd_i)     $display("File was opened successfully : %0d", fd_i);
     else      	  $display("File was NOT opened successfully : %0d", fd_i);
 
     if (fd_o)     $display("File was opened successfully : %0d", fd_o);
     else      	  $display("File was NOT opened successfully : %0d", fd_o);
-	#80
+	#10
 	clk				=	0;
     start_i         =   0;
 	data_i			=	0;
 	tmp 			= 	0;
 	rst				=	1;
-	#80;
+	#10;
 	rst				=	0;
     start_i         =   1;
 
