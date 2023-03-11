@@ -1,4 +1,4 @@
-WINDOW_SIZE = 3
+WINDOW_SIZE = 4
 
 with open("Module/Averaging/testdata.txt", "r") as f:
   # Initialisiere das Schieberegister mit Nullen
