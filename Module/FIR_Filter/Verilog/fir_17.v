@@ -1,14 +1,14 @@
 module fir_17(clk, 
-            rst, 
-            data_i, 
-            valid_i, 
+            rst,
+			start_i,
+            data_i,  
             data_o);
 
 input clk;
 input rst;
 input valid_i;
-input [7:0] data_i;
-output reg signed [9:0] data_o;
+input [15:0] data_i;
+output wire signed [15:0] data_o;
 
 /* FIR-Filter Taps*/
 
@@ -31,117 +31,87 @@ reg signed [15:0] h_14;
 reg signed [15:0] h_15;
 reg signed [15:0] h_16;
 
-/* Filter 2*/
-/*
-16'b0;       
-16'b1111100000000000;       
-16'b1111001010110011;       
-16'b1111010010100101;      
-16'b0;       
-16'b0001001100011011;       
-16'b0010100010100101;       
-16'b0011100110010110;       
-16'b0100000000000000;       
-16'b0011100110010110;       
-16'b0010100010100101;      
-16'b0001001100011011;       
-16'b0;       
-16'b1111010010100101;       
-16'b1111001010110011;       
-16'b1111100000000000;       
-16'b0;  
-*/
-
 /*Buffer*/ 
-reg signed [7:0] buff [0:16];
+reg signed [15:0] buff [0:16];
 
-/*Multiply Stage 16-Bit * 8-Bit = 32-Bit*/
-reg signed [23:0] acc [0:16];
-reg signed [23:0] acc_r [0:16];
+/*Multiply Stage 16-Bit * 1.15 = 32-Bit*/
+reg signed [31:0] acc [0:16];
+reg signed [31:0] acc_r [0:16];
 
 /*Adder Stage*/
-reg signed[23:0] sum;
-reg signed[23:0] sum_r;
+reg signed[31:0] sum;
+reg signed[31:0] sum_r;
 
-/* valid reg */
-reg valid_i_r;
-
-// Update Circular Buffer 
 always @ (posedge clk)
     begin
-        if (rst == 1'b1) begin
-
-            valid_i_r <= 1'b0;
+        if (rst) begin
 
             sum_r     <= 1'b0;
 
             /* reset buffer*/
-            buff[0]<= 8'b0;
-            buff[1]<= 8'b0;       
-            buff[2]<= 8'b0;       
-            buff[3]<= 8'b0;     
-            buff[4]<= 8'b0;     
-            buff[5]<= 8'b0;     
-            buff[6]<= 8'b0;   
-            buff[7]<= 8'b0;       
-            buff[8]<= 8'b0;       
-            buff[9]<= 8'b0;       
-            buff[10] <= 8'b0;        
-            buff[11] <= 8'b0;       
-            buff[12] <= 8'b0;      
-            buff[13] <= 8'b0;       
-            buff[14] <= 8'b0; 
-            buff[15] <= 8'b0; 
-            buff[16] <= 8'b0;
+            buff[0]<= 16'b0;
+            buff[1]<= 16'b0;       
+            buff[2]<= 16'b0;       
+            buff[3]<= 16'b0;     
+            buff[4]<= 16'b0;     
+            buff[5]<= 16'b0;     
+            buff[6]<= 16'b0;   
+            buff[7]<= 16'b0;       
+            buff[8]<= 16'b0;       
+            buff[9]<= 16'b0;       
+            buff[10] <= 16'b0;        
+            buff[11] <= 16'b0;       
+            buff[12] <= 16'b0;      
+            buff[13] <= 16'b0;       
+            buff[14] <= 16'b0; 
+            buff[15] <= 16'b0; 
+            buff[16] <= 16'b0;
 
             /* reset multiply stage*/
-            acc_r[0] <= 24'b0;
-            acc_r[1] <= 24'b0;
-            acc_r[2] <= 24'b0;
-            acc_r[3] <= 24'b0;
-            acc_r[4] <= 24'b0;
-            acc_r[5] <= 24'b0;
-            acc_r[6] <= 24'b0;
-            acc_r[7] <= 24'b0;
-            acc_r[8] <= 24'b0;
-            acc_r[9] <= 24'b0;
-            acc_r[10] <= 24'b0;
-            acc_r[11] <= 24'b0;
-            acc_r[12] <= 24'b0;
-            acc_r[13] <= 24'b0;
-            acc_r[14] <= 24'b0;
-            acc_r[15] <= 24'b0;
-            acc_r[16] <= 24'b0;
+            acc_r[0] <= 32'b0;
+            acc_r[1] <= 32'b0;
+            acc_r[2] <= 32'b0;
+            acc_r[3] <= 32'b0;
+            acc_r[4] <= 32'b0;
+            acc_r[5] <= 32'b0;
+            acc_r[6] <= 32'b0;
+            acc_r[7] <= 32'b0;
+            acc_r[8] <= 32'b0;
+            acc_r[9] <= 32'b0;
+            acc_r[10] <= 32'b0;
+            acc_r[11] <= 32'b0;
+            acc_r[12] <= 32'b0;
+            acc_r[13] <= 32'b0;
+            acc_r[14] <= 32'b0;
+            acc_r[15] <= 32'b0;
+            acc_r[16] <= 32'b0;
 
             /* reset output*/
-            data_o <= 24'b0; 
+            data_o <= 16'b0; 
             
-            /* Set Coeffs*/
-            h_0  = 16'b0;       
-            h_1  = 16'b1111010110110001;       
-            h_2  = 16'b1111001011111101;       
-            h_3  = 16'b0;      
-            h_4  = 16'b0001101001011011;       
-            h_5  = 16'b0011010011011111;       
-            h_6  = 16'b0100000000000000;       
-            h_7  = 16'b0011010011011111;       
-            h_8  = 16'b0001101001011011;       
-            h_9  = 16'b0;       
-            h_10 = 16'b1111001011111101;      
-            h_11 = 16'b1111010110110001;       
-            h_12 = 16'b0;       
-            h_13 = 16'b0;       
-            h_14 = 16'b0;       
-            h_15 = 16'b0;       
-            h_16 = 16'b0;
+            /* Set Coeffs FKF 1.15 - Cutoff: 10kHz fs: 200kHz*/
+            h_0  = 16'd83;
+            h_1  = 16'd188;     
+            h_2  = 16'd481;     
+            h_3  = 16'd1030;
+            h_4  = 16'd1818;     
+            h_5  = 16'd2734;    
+            h_6  = 16'd3600;    
+            h_7  = 16'd4222;   
+            h_8  = 16'd4448;     
+            h_9  = 16'd4222;
+            h_10 = 16'd3600;    
+            h_11 = 16'd2734;     
+            h_12 = 16'd1818;
+            h_13 = 16'd1030;
+            h_14 = 16'd481;
+            h_15 = 16'd188;
+            h_16 = 16'd83;
                        
         end
 
         else begin
-
-            /* Get Valid*/
-            valid_i_r <= valid_i;
-            
+          
             /* Update Buffer */
             buff[0]  <= data_i;
             buff[1]  <= buff[0];        
@@ -188,7 +158,7 @@ always @ (posedge clk)
     
 /* Kombinatorische Logik */
 always @ (*)begin
-        if (valid_i_r == 1'b1)
+        if (start_i)
             begin
                 /* Multiply Stage */
                 acc[0]    = h_0 * buff[0];
@@ -212,9 +182,10 @@ always @ (*)begin
                 /* Accumulate stage of FIR */
                 sum = acc_r[0]  +  acc_r[1]  +  acc_r[2]  +  acc_r[3]  +  acc_r[4]  +  acc_r[5]  +  acc_r[6]  +  acc_r[7]  +  acc_r[8]  +  acc_r[9]  +  acc_r[10] +  acc_r[11] +  acc_r[12] +  acc_r[13] +  acc_r[14] +  acc_r[15] +  acc_r[16];
 
-                data_o = sum_r[23:14];
-
             end
-    end   
+    end 
+
+/* Output Format = 16.0 */
+assign data_o = sum_r >> 15;	
 
 endmodule
