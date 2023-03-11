@@ -1,0 +1,65 @@
+module avg_128_tb;
+
+  // Parameter
+  parameter WIDTH = 16;
+  parameter SAMPLES = 3;
+
+  // Signale
+  reg               clk;
+  reg               rst;
+  reg signed [WIDTH-1:0]   data_i;
+  wire signed [WIDTH-1:0]  data_o;
+
+  reg start_i;
+
+  integer			fd_i, fd_o;
+
+  reg 				tmp;
+
+  // Instanz des zu testenden Moduls
+  avg_128 #(.WIDTH(WIDTH), .SAMPLES(SAMPLES)) DUT (
+    .clk(clk),
+    .rst(rst),
+    .start_i (start_i),
+    .data_i(data_i),
+    .data_o(data_o)
+  );
+
+always
+	#1 	clk=!clk;
+	 
+initial begin
+	fd_i = $fopen("/Users/dave/Documents/FM-Demodulator/Module/Averaging/testdata.txt", "r");
+	fd_o = $fopen("/Users/dave/Documents/FM-Demodulator/Module/Averaging/result_verilog.txt", "w");
+	
+	if (fd_i)     $display("File was opened successfully : %0d", fd_i);
+    else      	  $display("File was NOT opened successfully : %0d", fd_i);
+
+    if (fd_o)     $display("File was opened successfully : %0d", fd_o);
+    else      	  $display("File was NOT opened successfully : %0d", fd_o);
+	#80
+	clk				=	0;
+    start_i         =   0;
+	data_i			=	0;
+	tmp 			= 	0;
+	rst				=	1;
+	#80;
+	rst				=	0;
+    start_i         =   1;
+
+end		
+
+always @ (posedge clk) begin
+	if(start_i) begin
+		if (!($feof(fd_i))) begin
+			tmp = $fscanf(fd_i, "%d\n", data_i);
+			$fwrite(fd_o, "%d\n", data_o);
+		end else begin
+			$fclose(fd_i);
+			$fclose(fd_o);
+			$finish;
+		end
+end
+end
+
+endmodule
