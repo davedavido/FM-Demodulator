@@ -6,4 +6,6 @@ fm_imag = np.int32(np.genfromtxt('/Users/Davidlohner/Documents/FM-Demodulator/Py
 
 fm_merged_32 = (fm_real << 16) | (fm_imag & 0xFFFF)
 
+print(fm_merged_32.max(), fm_merged_32.min())
+
 np.savetxt('/Users/Davidlohner/Documents/FM-Demodulator/Python/fm_merged_32.txt', fm_merged_32, fmt = '%d')
