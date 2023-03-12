@@ -23,4 +23,4 @@ for i in range (len(fm_merged_32)):
     bytes.append(a1)
     bytes.append(a0)
 
-np.savetxt('/Users/Davidlohner/Documents/FM-Demodulator/Python/fm_bytes.txt', np.array(bytes), fmt = '%X')
+np.savetxt('/Users/Davidlohner/Documents/FM-Demodulator/Python/fm_bytes.txt', np.array(bytes), fmt = '%d')
