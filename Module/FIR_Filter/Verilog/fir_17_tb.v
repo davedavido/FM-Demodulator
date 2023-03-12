@@ -1,52 +1,53 @@
 module fir_17_tb;
 
-parameter		NVL 	= 10000;		//	Number of Noise Samples
+// Parameter
+parameter WIDTH = 16;
 	
 
 reg					clk;
 reg					rst;
-reg signed [7:0]	data_i;
+reg signed [WIDTH-1:0]	data_i;
 reg 				tmp;
-reg					valid_i;
+reg					start_i;
 
 integer				fd_i, fd_o;
 
-wire signed [9:0]	data_o;
+wire signed [WIDTH-1:0]	data_o;
 				
-fir_17 DUT(
+fir_17 #(.WIDTH(WIDTH)) DUT(
     .clk				(clk),
 	.rst				(rst),
+	.start_i			(start_i),
     .data_i				(data_i),
-    .valid_i			(valid_i),
     .data_o				(data_o)
 );
 
 always
-	#5 	clk=!clk;
+	#1 	clk=!clk;
 	 
 initial begin
-	fd_i = $fopen("noisesignal.txt", "r");
-	fd_o = $fopen("fir_o.txt", "w");
+	fd_i = $fopen("Input.txt", "r");
+	fd_o = $fopen("Output_FIR.txt", "w");
 	
 	if (fd_i)     $display("File was opened successfully : %0d", fd_i);
     else      	  $display("File was NOT opened successfully : %0d", fd_i);
 
     if (fd_o)     $display("File was opened successfully : %0d", fd_o);
     else      	  $display("File was NOT opened successfully : %0d", fd_o);
-	#80
+	#10
 	clk				=	0;
-	valid_i			=	0;
+	start_i			=	0;
 	data_i			=	0;
 	tmp 			= 	0;
 	rst				=	1;
-	#80;
+	#10;
 	rst				=	0;
-	valid_i 		=	1;
+	start_i 		=	1;
 
 end		
 
 always @ (posedge clk) begin
-	if(valid_i) begin
+	if(start_i) begin
 		if (!($feof(fd_i))) begin
 			tmp = $fscanf(fd_i, "%d\n", data_i);
 			$fwrite(fd_o, "%d\n", data_o);
