@@ -5,14 +5,15 @@ module fir_17#(parameter WIDTH = 16)
             data_i,  
             data_o);
 
+
+/* Ein - und Ausgänge */	
 input clk, rst;
 input start_i;
 input signed [WIDTH-1:0] data_i;
 output wire signed [WIDTH-1:0] data_o;
 
+/* Intern */
 /* FIR-Filter Taps*/
-
-/* Filter 1*/
 reg signed [WIDTH-1:0] h_0 ; 
 reg signed [WIDTH-1:0] h_1 ;     
 reg signed [WIDTH-1:0] h_2 ;    

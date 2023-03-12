@@ -1,0 +1,431 @@
+# Compile of top.v was successful.
+# Compile of top_tb.v was successful.
+# Compile of avg_128.v was successful.
+# Compile of conj_c_mult.v was successful.
+# Compile of fir_17.v was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.top_tb
+# vsim -gui work.top_tb 
+# Start time: 11:11:25 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# Loading work.fir_17
+# ** Error (suppressible): (vsim-12027) Array connection type 'wire$[15:0]' is incompatible with 'wire signed[15:0]' for  port (demod_o):  Can't mix packed and unpacked types.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/DUT/CONJ_C_MULT File: C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top.v Line: 21
+# ** Error (suppressible): (vsim-12027) Array connection type 'wire$[15:0]' is incompatible with 'wire signed[15:0]' for  port (data_i):  Can't mix packed and unpacked types.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/DUT/AVG_128 File: C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top.v Line: 30
+# ** Error (suppressible): (vsim-12027) Array connection type 'wire$[15:0]' is incompatible with 'wire signed[15:0]' for  port (data_o):  Can't mix packed and unpacked types.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/DUT/AVG_128 File: C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top.v Line: 30
+# ** Error (suppressible): (vsim-12027) Array connection type 'wire$[15:0]' is incompatible with 'wire signed[15:0]' for  port (data_i):  Can't mix packed and unpacked types.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/DUT/FIR_17 File: C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top.v Line: 38
+# Error loading design
+# End time: 11:11:25 on Mar 12,2023, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 8
+# Compile of top.v was successful.
+# Compile of top_tb.v was successful.
+# Compile of avg_128.v was successful.
+# Compile of conj_c_mult.v was successful.
+# Compile of fir_17.v was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.top_tb
+# vsim -gui work.top_tb 
+# Start time: 11:13:13 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# Loading work.fir_17
+# ** Error (suppressible): (vsim-12027) Array connection type 'wire$[15:0]' is incompatible with 'wire signed[15:0]' for  port (demod_o):  Can't mix packed and unpacked types.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/DUT/CONJ_C_MULT File: C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top.v Line: 21
+# ** Error (suppressible): (vsim-12027) Array connection type 'wire$[15:0]' is incompatible with 'wire signed[15:0]' for  port (data_i):  Can't mix packed and unpacked types.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/DUT/AVG_128 File: C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top.v Line: 30
+# ** Error (suppressible): (vsim-12027) Array connection type 'wire$[15:0]' is incompatible with 'wire signed[15:0]' for  port (data_o):  Can't mix packed and unpacked types.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/DUT/AVG_128 File: C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top.v Line: 30
+# ** Error (suppressible): (vsim-12027) Array connection type 'wire$[15:0]' is incompatible with 'wire signed[15:0]' for  port (data_i):  Can't mix packed and unpacked types.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/DUT/FIR_17 File: C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top.v Line: 38
+# Error loading design
+# End time: 11:13:13 on Mar 12,2023, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 2
+# Compile of top.v was successful.
+# Compile of top_tb.v was successful.
+# Compile of avg_128.v was successful.
+# Compile of conj_c_mult.v was successful.
+# Compile of fir_17.v was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.top_tb
+# vsim -gui work.top_tb 
+# Start time: 11:15:30 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# Loading work.fir_17
+add wave -position insertpoint  \
+sim:/top_tb/DUT/CONJ_C_MULT/real_i_r \
+sim:/top_tb/DUT/CONJ_C_MULT/imag_i_r
+add wave -position insertpoint  \
+sim:/top_tb/DUT/CONJ_C_MULT/demod_o
+add wave -position insertpoint  \
+sim:/top_tb/DUT/CONJ_C_MULT/clk \
+sim:/top_tb/DUT/CONJ_C_MULT/rst \
+sim:/top_tb/DUT/CONJ_C_MULT/start_i
+add wave -position insertpoint  \
+sim:/top_tb/DUT/AVG_128/data_i_r
+add wave -position insertpoint  \
+sim:/top_tb/DUT/AVG_128/data_o
+add wave -position insertpoint  \
+sim:/top_tb/DUT/AVG_128/count
+add wave -position insertpoint  \
+sim:/top_tb/DUT/FIR_17/data_i \
+sim:/top_tb/DUT/FIR_17/data_o
+run -all
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+add wave -position insertpoint  \
+sim:/top_tb/data_o
+add wave -position insertpoint  \
+sim:/top_tb/data_i
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/ModelSim/top.do
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# End time: 11:20:29 on Mar 12,2023, Elapsed time: 0:04:59
+# Errors: 0, Warnings: 2
+# vsim -gui work.top_tb 
+# Start time: 11:20:29 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# Loading work.fir_17
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+# ** Note: $finish    : C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v(54)
+#    Time: 3600036 ps  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v line 54
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# End time: 11:27:10 on Mar 12,2023, Elapsed time: 0:06:41
+# Errors: 0, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 11:27:10 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# Loading work.fir_17
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+# ** Note: $finish    : C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v(54)
+#    Time: 3600036 ps  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v line 54
+# Compile of pkg_detect.v failed with 1 errors.
+# Compile of pkg_detect.v failed with 4 errors.
+# Compile of pkg_detect.v failed with 2 errors.
+# Compile of pkg_detect.v failed with 1 errors.
+# Compile of pkg_detect.v failed with 4 errors.
+# Compile of pkg_detect.v was successful.
+# Compile of top.v was successful.
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# End time: 13:11:35 on Mar 12,2023, Elapsed time: 1:44:25
+# Errors: 0, Warnings: 9
+# vsim -gui work.top_tb 
+# Start time: 13:11:35 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.pkg_detect
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# Loading work.fir_17
+# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'valid_o'.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb/DUT File: C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v Line: 14
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./top.do PAUSED at line 8
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# ** Error: C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v(36): (vlog-2110) Illegal reference to net "valid_o".
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./top.do line 2
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -work work -stats=none C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v"
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# ** Error: C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v(36): (vlog-2110) Illegal reference to net "valid_o".
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./top.do line 2
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -work work -stats=none C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v"
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# ** Error: C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v(36): (vlog-2110) Illegal reference to net "valid_o".
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./top.do line 2
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -work work -stats=none C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v"
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# ** Error: C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v(36): (vlog-2110) Illegal reference to net "valid_o".
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./top.do line 2
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -work work -stats=none C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v"
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# vsim -gui work.top_tb 
+# Start time: 13:11:35 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.pkg_detect
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# Loading work.fir_17
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+add wave -position insertpoint  \
+sim:/top_tb/DUT/PKG_DETECT/start_o \
+sim:/top_tb/DUT/PKG_DETECT/valid_o
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/ModelSim/top2.do
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# End time: 13:24:49 on Mar 12,2023, Elapsed time: 0:13:14
+# Errors: 5, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 13:24:49 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.pkg_detect
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# Loading work.fir_17
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+add wave -position insertpoint  \
+sim:/top_tb/DUT/PKG_DETECT/data_i_r
+add wave -position insertpoint  \
+sim:/top_tb/DUT/PKG_DETECT/current_state
+add wave -position insertpoint  \
+sim:/top_tb/DUT/PKG_DETECT/next_state
+restart
+run
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+run
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# End time: 13:29:56 on Mar 12,2023, Elapsed time: 0:05:07
+# Errors: 0, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 13:29:56 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.pkg_detect
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# Loading work.fir_17
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+run -all
+run -all
+run -all
+# ** Note: $finish    : C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v(53)
+#    Time: 3600044 ps  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v line 53
