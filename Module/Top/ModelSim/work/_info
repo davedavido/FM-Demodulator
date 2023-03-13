@@ -10,23 +10,23 @@ z2
 cModel Technology
 dC:/Users/David/Documents/GitHub/FM-Demodulator/Module/FIR_Filter/ModelSim
 vavg_128
-Z0 !s110 1678624194
+Z0 !s110 1678709084
 !i10b 1
-!s100 hbm?5N1D9P>zl;9?aeR:;3
+!s100 O8l9JBZSRH5gg`XF<>bDz3
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IO5`TeI0Y:Y;HoXDJEPzTB3
+ITSiLD2mH;Uc;R2W@19f[23
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 Z3 dC:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/ModelSim
-w1678614702
+w1678644150
 8C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Averaging/avg_128.v
 FC:/Users/David/Documents/GitHub/FM-Demodulator/Module/Averaging/avg_128.v
-!i122 51
+!i122 550
 L0 1 67
 Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1678624194.000000
+Z5 !s108 1678709084.000000
 !s107 C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Averaging/avg_128.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Averaging/avg_128.v|
 !i113 1
@@ -35,16 +35,16 @@ Z7 tCvgOpt 0
 vconj_c_mult
 R0
 !i10b 1
-!s100 PT]l;bWb=Dm2YX`FdY<8C0
+!s100 PMG8h::=zhJG4LLoAzO]P1
 R1
-IQY`KeM40_dcezKjE2=Ia32
+I^eFN:zon`AiMcG8HEIDhl3
 R2
 R3
-w1678550575
+w1678634727
 8C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Komplex_Mult/conj_c_mult.v
 FC:/Users/David/Documents/GitHub/FM-Demodulator/Module/Komplex_Mult/conj_c_mult.v
-!i122 52
-L0 1 66
+!i122 551
+L0 1 71
 R4
 r1
 !s85 0
@@ -58,16 +58,16 @@ R7
 vfir_17
 R0
 !i10b 1
-!s100 HPSRSj[Uj8]bzU25d@aO42
+!s100 9T<NaZm?a2gOJKcI[L>a]1
 R1
-I^`AeL@PYUXM1mhESTfhB>3
+IYEI30i`ifZ`gRczkl[VFn2
 R2
 R3
-w1678614746
+w1678705664
 8C:/Users/David/Documents/GitHub/FM-Demodulator/Module/FIR_Filter/Verilog/fir_17.v
 FC:/Users/David/Documents/GitHub/FM-Demodulator/Module/FIR_Filter/Verilog/fir_17.v
-!i122 53
-L0 1 210
+!i122 552
+L0 1 215
 R4
 r1
 !s85 0
@@ -75,6 +75,29 @@ r1
 R5
 !s107 C:/Users/David/Documents/GitHub/FM-Demodulator/Module/FIR_Filter/Verilog/fir_17.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/David/Documents/GitHub/FM-Demodulator/Module/FIR_Filter/Verilog/fir_17.v|
+!i113 1
+R6
+R7
+vmerge_data
+R0
+!i10b 1
+!s100 Q3TiUMB<6bD4i0bXGYmKA2
+R1
+IL6YZY6dDlK=fi0T7lMM1B1
+R2
+R3
+w1678706569
+8C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Merge_Data/merge_data.v
+FC:/Users/David/Documents/GitHub/FM-Demodulator/Module/Merge_Data/merge_data.v
+!i122 554
+Z8 L0 1 62
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Merge_Data/merge_data.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Merge_Data/merge_data.v|
 !i113 1
 R6
 R7
@@ -89,7 +112,7 @@ R3
 w1678624177
 8C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Package_Detect/pkg_detect.v
 FC:/Users/David/Documents/GitHub/FM-Demodulator/Module/Package_Detect/pkg_detect.v
-!i122 54
+!i122 553
 L0 1 69
 R4
 r1
@@ -101,24 +124,47 @@ R5
 !i113 1
 R6
 R7
-vtop
+vsplit_data
 R0
 !i10b 1
-!s100 ?gBIlCJ_RZ[Un[FzZ[AkK3
+!s100 E[3gAF2eOQ:^h_4ZdSD4`1
 R1
-I6[Yg3o1[Z3PX@hlQY>XLA1
+IH7Z5d<BP1De9h5;:`o1g_1
 R2
 R3
-w1678623415
-8C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top.v
-FC:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top.v
-!i122 49
+w1678708423
+8C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Split_Data/split_data.v
+FC:/Users/David/Documents/GitHub/FM-Demodulator/Module/Split_Data/split_data.v
+!i122 555
 L0 1 58
 R4
 r1
 !s85 0
 31
 R5
+!s107 C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Split_Data/split_data.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Split_Data/split_data.v|
+!i113 1
+R6
+R7
+vtop
+!s110 1678709083
+!i10b 1
+!s100 IlHg3SGc_<iLD1ziI9`>90
+R1
+I^P16HDjz`V_eg9]PAQQVW2
+R2
+R3
+w1678708459
+8C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top.v
+FC:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top.v
+!i122 548
+L0 1 85
+R4
+r1
+!s85 0
+31
+Z9 !s108 1678709083.000000
 !s107 C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top.v|
 !i113 1
@@ -127,21 +173,21 @@ R7
 vtop_tb
 R0
 !i10b 1
-!s100 Zc7Wol>ANb@7PR?EhfI3k0
+!s100 jFNhKGUHG8D5e:aj<G`6a0
 R1
-IA?j3_3ZS>5J;_<@Slz?E61
+IQ=ioWHT7]Qoz:gN1lk[eI2
 R2
 R3
-w1678623876
+w1678709069
 8C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v
 FC:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v
-!i122 50
-L0 1 57
+!i122 549
+R8
 R4
 r1
 !s85 0
 31
-R5
+R9
 !s107 C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v|
 !i113 1

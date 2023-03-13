@@ -1,0 +1,2563 @@
+# Compile of top.v failed with 2 errors.
+# Compile of top_tb.v failed with 1 errors.
+# Compile of avg_128.v was successful.
+# Compile of conj_c_mult.v was successful.
+# Compile of fir_17.v was successful.
+# Compile of pkg_detect.v was successful.
+# Compile of merge_data.v was successful.
+# 7 compiles, 2 failed with 3 errors.
+# Compile of top.v was successful with warnings.
+# Compile of top_tb.v was successful.
+# Compile of avg_128.v was successful.
+# Compile of conj_c_mult.v was successful.
+# Compile of fir_17.v was successful.
+# Compile of pkg_detect.v was successful.
+# Compile of merge_data.v was successful.
+# 7 compiles, 0 failed with no errors.
+# Compile of top.v was successful.
+# Compile of top_tb.v was successful.
+# Compile of avg_128.v was successful.
+# Compile of conj_c_mult.v was successful.
+# Compile of fir_17.v was successful.
+# Compile of pkg_detect.v was successful.
+# Compile of merge_data.v was successful.
+# 7 compiles, 0 failed with no errors.
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# ** Error: (vlog-7) Failed to open design unit file "C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Package_Detect/merge_data.v" in read mode.
+# No such file or directory. (errno = ENOENT)
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./top.do line 7
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -work work -stats=none C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Package_Detect/merge_data.v"
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# vsim -gui work.top_tb 
+# Start time: 16:38:46 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# ** Error: (vsim-3043) Unresolved reference to 'fd_i_imag'.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v Line: 55
+# ** Error: (vsim-3043) Unresolved reference to 'fd_i_real'.
+#    Time: 0 ps  Iteration: 0  Instance: /top_tb File: C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v Line: 54
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./top.do PAUSED at line 9
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# vsim -gui work.top_tb 
+# Start time: 16:38:46 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# ** UI-Msg: (vish-4014) No objects found matching '/top_tb/DUT/AVG_128/data_i_r'.
+# Executing ONERROR command at macro ./top.do line 25
+# ** UI-Msg: (vish-4014) No objects found matching '/top_tb/DUT/AVG_128/data_o'.
+# Executing ONERROR command at macro ./top.do line 26
+# ** UI-Msg: (vish-4014) No objects found matching '/top_tb/DUT/AVG_128/count'.
+# Executing ONERROR command at macro ./top.do line 27
+# ** UI-Msg: (vish-4014) No objects found matching '/top_tb/DUT/FIR_17/data_i'.
+# Executing ONERROR command at macro ./top.do line 29
+# ** UI-Msg: (vish-4014) No objects found matching '/top_tb/DUT/FIR_17/data_o'.
+# Executing ONERROR command at macro ./top.do line 30
+# ** UI-Msg: (vish-4014) No objects found matching '/top_tb/DUT/PKG_DETECT/start_o'.
+# Executing ONERROR command at macro ./top.do line 32
+# ** UI-Msg: (vish-4014) No objects found matching '/top_tb/DUT/PKG_DETECT/valid_o'.
+# Executing ONERROR command at macro ./top.do line 33
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+add wave -position insertpoint  \
+sim:/top_tb/DUT/MERGE_DATA/data_uart_i
+add wave -position insertpoint  \
+sim:/top_tb/DUT/MERGE_DATA/merge_finished_o
+add wave -position insertpoint  \
+sim:/top_tb/DUT/MERGE_DATA/data_o
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+add wave -position insertpoint  \
+sim:/top_tb/data_i
+run
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Merge_Data/ModelSim/top2.do
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 16:43:58 on Mar 12,2023, Elapsed time: 0:05:12
+# Errors: 0, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 16:43:58 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 16:44:28 on Mar 12,2023, Elapsed time: 0:00:30
+# Errors: 0, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 16:44:28 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+# ** Note: $finish    : C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v(56)
+#    Time: 100 ps  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v line 56
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 16:57:59 on Mar 12,2023, Elapsed time: 0:13:31
+# Errors: 0, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 16:57:59 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+# ** Note: $finish    : C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v(56)
+#    Time: 100 ps  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v line 56
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 17:01:36 on Mar 12,2023, Elapsed time: 0:03:37
+# Errors: 0, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 17:01:36 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+# ** Note: $finish    : C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v(57)
+#    Time: 100 ps  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v line 57
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 17:01:52 on Mar 12,2023, Elapsed time: 0:00:16
+# Errors: 0, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 17:01:52 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+# ** Note: $finish    : C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v(57)
+#    Time: 100 ps  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v line 57
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 17:05:53 on Mar 12,2023, Elapsed time: 0:04:01
+# Errors: 0, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 17:05:53 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+# ** Note: $finish    : C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v(57)
+#    Time: 14400084 ps  Iteration: 1  Instance: /top_tb
+# 1
+# Break in Module top_tb at C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v line 57
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 17:16:52 on Mar 12,2023, Elapsed time: 0:10:59
+# Errors: 0, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 17:16:52 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 17:22:23 on Mar 12,2023, Elapsed time: 0:05:31
+# Errors: 0, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 17:22:23 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+add wave -position insertpoint  \
+sim:/top_tb/DUT/AVG_128/mean
+add wave -position insertpoint  \
+sim:/top_tb/DUT/AVG_128/sum
+restart
+run
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 17:26:42 on Mar 12,2023, Elapsed time: 0:04:19
+# Errors: 0, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 17:26:42 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+add wave -position insertpoint  \
+sim:/top_tb/DUT/AVG_128/buff
+run
+restart
+run
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 17:44:19 on Mar 12,2023, Elapsed time: 0:17:37
+# Errors: 0, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 17:44:19 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 17:46:11 on Mar 12,2023, Elapsed time: 0:01:52
+# Errors: 0, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 17:46:11 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+run
+run
+run
+run
+run
+run
+run -all
+run
+restart
+run
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 17:53:16 on Mar 12,2023, Elapsed time: 0:07:05
+# Errors: 0, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 17:53:16 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+run
+run
+add wave -position insertpoint  \
+sim:/top_tb/DUT/AVG_128/data_o
+add wave -position insertpoint  \
+sim:/top_tb/DUT/AVG_128/data_i_r
+add wave -position insertpoint  \
+sim:/top_tb/DUT/AVG_128/mean
+restart
+run
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+run
+run
+run
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 17:57:17 on Mar 12,2023, Elapsed time: 0:04:01
+# Errors: 0, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 17:57:17 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+run
+run
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 17:59:20 on Mar 12,2023, Elapsed time: 0:02:03
+# Errors: 0, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 17:59:20 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+run
+run
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# ** Error: C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Averaging/avg_128.v(53): (vlog-2730) Undefined variable: 'data_i_r_temp'.
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./top.do line 3
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -work work -stats=none C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Averaging/avg_128.v"
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 18:02:10 on Mar 12,2023, Elapsed time: 0:02:50
+# Errors: 1, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 18:02:10 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 18:03:25 on Mar 12,2023, Elapsed time: 0:01:15
+# Errors: 0, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 18:03:25 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+run
+run
+run
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 18:05:10 on Mar 12,2023, Elapsed time: 0:01:45
+# Errors: 0, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 18:05:10 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+run
+run
+add wave -position insertpoint  \
+sim:/top_tb/DUT/AVG_128/data_i_temp
+add wave -position insertpoint  \
+sim:/top_tb/DUT/AVG_128/data_i_r
+restart
+run
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+add wave -position insertpoint  \
+sim:/top_tb/DUT/AVG_128/data_i
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Merge_Data/ModelSim/top2.do
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 18:08:30 on Mar 12,2023, Elapsed time: 0:03:20
+# Errors: 0, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 18:08:30 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+run
+run
+run
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 18:11:06 on Mar 12,2023, Elapsed time: 0:02:36
+# Errors: 0, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 18:11:06 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+run
+run
+add wave -position insertpoint  \
+sim:/top_tb/DUT/AVG_128/sum \
+sim:/top_tb/DUT/AVG_128/mean
+add wave -position insertpoint  \
+sim:/top_tb/DUT/AVG_128/sum_r \
+sim:/top_tb/DUT/AVG_128/mean_r
+restart
+run
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+run
+run
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# ** Error: C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Averaging/avg_128.v(41): (vlog-2730) Undefined variable: 'data_i_temp'.
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./top.do line 3
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -work work -stats=none C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Averaging/avg_128.v"
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 18:15:36 on Mar 12,2023, Elapsed time: 0:04:30
+# Errors: 1, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 18:15:36 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# ** UI-Msg: (vish-4014) No objects found matching '/top_tb/DUT/AVG_128/data_i_temp'.
+# Executing ONERROR command at macro ./top.do line 32
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+run
+run
+add wave -position insertpoint  \
+sim:/top_tb/DUT/AVG_128/sum \
+sim:/top_tb/DUT/AVG_128/mean
+add wave -position insertpoint  \
+sim:/top_tb/DUT/AVG_128/sum_r \
+sim:/top_tb/DUT/AVG_128/mean_r
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Merge_Data/ModelSim/top2.do
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 18:17:38 on Mar 12,2023, Elapsed time: 0:02:02
+# Errors: 0, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 18:17:38 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+run
+run
+add wave -position insertpoint  \
+sim:/top_tb/DUT/AVG_128/merge_finished_r
+run
+restart
+run
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+run
+run
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 18:21:22 on Mar 12,2023, Elapsed time: 0:03:44
+# Errors: 0, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 18:21:22 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+run
+run
+add wave -position insertpoint  \
+sim:/top_tb/DUT/AVG_128/clk \
+sim:/top_tb/DUT/AVG_128/rst \
+sim:/top_tb/DUT/AVG_128/start_i \
+sim:/top_tb/DUT/AVG_128/merge_finished_i \
+sim:/top_tb/DUT/AVG_128/data_i \
+sim:/top_tb/DUT/AVG_128/data_o \
+sim:/top_tb/DUT/AVG_128/buff \
+sim:/top_tb/DUT/AVG_128/sum \
+sim:/top_tb/DUT/AVG_128/mean \
+sim:/top_tb/DUT/AVG_128/count \
+sim:/top_tb/DUT/AVG_128/sum_r \
+sim:/top_tb/DUT/AVG_128/mean_r \
+sim:/top_tb/DUT/AVG_128/count_r \
+sim:/top_tb/DUT/AVG_128/data_i_r \
+sim:/top_tb/DUT/AVG_128/merge_finished_r \
+sim:/top_tb/DUT/AVG_128/i
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 18:24:11 on Mar 12,2023, Elapsed time: 0:02:49
+# Errors: 0, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 18:24:11 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+run
+run
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 18:26:35 on Mar 12,2023, Elapsed time: 0:02:24
+# Errors: 0, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 18:26:35 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+run
+run
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 18:29:25 on Mar 12,2023, Elapsed time: 0:02:50
+# Errors: 0, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 18:29:25 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+run
+run
+run
+run
+run
+run
+run
+run
+run
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 18:32:16 on Mar 12,2023, Elapsed time: 0:02:51
+# Errors: 0, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 18:32:16 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 18:32:54 on Mar 12,2023, Elapsed time: 0:00:38
+# Errors: 0, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 18:32:54 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 18:35:15 on Mar 12,2023, Elapsed time: 0:02:21
+# Errors: 0, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 18:35:15 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 18:37:28 on Mar 12,2023, Elapsed time: 0:02:13
+# Errors: 0, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 18:37:28 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 18:39:47 on Mar 12,2023, Elapsed time: 0:02:19
+# Errors: 0, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 18:39:47 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 18:41:21 on Mar 12,2023, Elapsed time: 0:01:34
+# Errors: 0, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 18:41:21 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# ** UI-Msg: (vish-4014) No objects found matching '/top_tb/DUT/AVG_128/mean'.
+# Executing ONERROR command at macro ./top.do line 35
+# ** UI-Msg: (vish-4014) No objects found matching '/top_tb/DUT/AVG_128/mean_r'.
+# Executing ONERROR command at macro ./top.do line 37
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+run
+run
+run
+run
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 18:42:52 on Mar 12,2023, Elapsed time: 0:01:31
+# Errors: 0, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 18:42:52 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# ** UI-Msg: (vish-4014) No objects found matching '/top_tb/DUT/AVG_128/mean'.
+# Executing ONERROR command at macro ./top.do line 35
+# ** UI-Msg: (vish-4014) No objects found matching '/top_tb/DUT/AVG_128/mean_r'.
+# Executing ONERROR command at macro ./top.do line 37
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+run
+run
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 18:44:14 on Mar 12,2023, Elapsed time: 0:01:22
+# Errors: 0, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 18:44:14 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# ** UI-Msg: (vish-4014) No objects found matching '/top_tb/DUT/AVG_128/mean'.
+# Executing ONERROR command at macro ./top.do line 35
+# ** UI-Msg: (vish-4014) No objects found matching '/top_tb/DUT/AVG_128/mean_r'.
+# Executing ONERROR command at macro ./top.do line 37
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+run
+run
+run
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 18:45:37 on Mar 12,2023, Elapsed time: 0:01:23
+# Errors: 0, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 18:45:37 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# ** UI-Msg: (vish-4014) No objects found matching '/top_tb/DUT/AVG_128/mean'.
+# Executing ONERROR command at macro ./top.do line 35
+# ** UI-Msg: (vish-4014) No objects found matching '/top_tb/DUT/AVG_128/mean_r'.
+# Executing ONERROR command at macro ./top.do line 37
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 18:46:07 on Mar 12,2023, Elapsed time: 0:00:30
+# Errors: 0, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 18:46:07 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# ** UI-Msg: (vish-4014) No objects found matching '/top_tb/DUT/AVG_128/mean'.
+# Executing ONERROR command at macro ./top.do line 35
+# ** UI-Msg: (vish-4014) No objects found matching '/top_tb/DUT/AVG_128/mean_r'.
+# Executing ONERROR command at macro ./top.do line 37
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+run
+run
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# ** Error: (vlog-13069) C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Averaging/avg_128.v(68): near ";": syntax error, unexpected ';'.
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./top.do line 3
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -work work -stats=none C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Averaging/avg_128.v"
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 18:48:28 on Mar 12,2023, Elapsed time: 0:02:21
+# Errors: 1, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 18:48:28 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+run
+run
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 18:49:38 on Mar 12,2023, Elapsed time: 0:01:10
+# Errors: 0, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 18:49:38 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+run
+run
+run
+run
+run
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# ** Error: C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Averaging/avg_128.v(34): (vlog-2730) Undefined variable: 'mean_r'.
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./top.do line 3
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -work work -stats=none C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Averaging/avg_128.v"
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 18:52:47 on Mar 12,2023, Elapsed time: 0:03:09
+# Errors: 1, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 18:52:47 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# ** UI-Msg: (vish-4014) No objects found matching '/top_tb/DUT/AVG_128/mean'.
+# Executing ONERROR command at macro ./top.do line 35
+# ** UI-Msg: (vish-4014) No objects found matching '/top_tb/DUT/AVG_128/mean_r'.
+# Executing ONERROR command at macro ./top.do line 37
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+run
+run
+run
+run
+run
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 18:53:46 on Mar 12,2023, Elapsed time: 0:00:59
+# Errors: 0, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 18:53:46 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# ** UI-Msg: (vish-4014) No objects found matching '/top_tb/DUT/AVG_128/mean'.
+# Executing ONERROR command at macro ./top.do line 35
+# ** UI-Msg: (vish-4014) No objects found matching '/top_tb/DUT/AVG_128/mean_r'.
+# Executing ONERROR command at macro ./top.do line 37
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 18:55:26 on Mar 12,2023, Elapsed time: 0:01:40
+# Errors: 0, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 18:55:26 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# ** UI-Msg: (vish-4014) No objects found matching '/top_tb/DUT/AVG_128/mean'.
+# Executing ONERROR command at macro ./top.do line 35
+# ** UI-Msg: (vish-4014) No objects found matching '/top_tb/DUT/AVG_128/mean_r'.
+# Executing ONERROR command at macro ./top.do line 37
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 18:57:09 on Mar 12,2023, Elapsed time: 0:01:43
+# Errors: 0, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 18:57:09 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# ** UI-Msg: (vish-4014) No objects found matching '/top_tb/DUT/AVG_128/mean'.
+# Executing ONERROR command at macro ./top.do line 35
+# ** UI-Msg: (vish-4014) No objects found matching '/top_tb/DUT/AVG_128/mean_r'.
+# Executing ONERROR command at macro ./top.do line 37
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 18:59:46 on Mar 12,2023, Elapsed time: 0:02:37
+# Errors: 0, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 18:59:47 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# ** UI-Msg: (vish-4014) No objects found matching '/top_tb/DUT/AVG_128/mean'.
+# Executing ONERROR command at macro ./top.do line 35
+# ** UI-Msg: (vish-4014) No objects found matching '/top_tb/DUT/AVG_128/mean_r'.
+# Executing ONERROR command at macro ./top.do line 37
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 19:01:30 on Mar 12,2023, Elapsed time: 0:01:43
+# Errors: 0, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 19:01:30 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# ** UI-Msg: (vish-4014) No objects found matching '/top_tb/DUT/AVG_128/mean'.
+# Executing ONERROR command at macro ./top.do line 35
+# ** UI-Msg: (vish-4014) No objects found matching '/top_tb/DUT/AVG_128/mean_r'.
+# Executing ONERROR command at macro ./top.do line 37
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+do top.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module avg_128
+# 
+# Top level modules:
+# 	avg_128
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module conj_c_mult
+# 
+# Top level modules:
+# 	conj_c_mult
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fir_17
+# 
+# Top level modules:
+# 	fir_17
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module pkg_detect
+# 
+# Top level modules:
+# 	pkg_detect
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module merge_data
+# 
+# Top level modules:
+# 	merge_data
+# End time: 19:02:42 on Mar 12,2023, Elapsed time: 0:01:12
+# Errors: 0, Warnings: 1
+# vsim -gui work.top_tb 
+# Start time: 19:02:42 on Mar 12,2023
+# Loading work.top_tb
+# Loading work.top
+# Loading work.merge_data
+# Loading work.conj_c_mult
+# Loading work.avg_128
+# ** UI-Msg: (vish-4014) No objects found matching '/top_tb/DUT/AVG_128/mean'.
+# Executing ONERROR command at macro ./top.do line 35
+# ** UI-Msg: (vish-4014) No objects found matching '/top_tb/DUT/AVG_128/mean_r'.
+# Executing ONERROR command at macro ./top.do line 37
+# File was opened successfully : -2147483645
+# File was opened successfully : -2147483644
+# End time: 19:03:45 on Mar 12,2023, Elapsed time: 0:01:03
+# Errors: 0, Warnings: 1

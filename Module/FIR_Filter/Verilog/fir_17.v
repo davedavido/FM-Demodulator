@@ -2,13 +2,14 @@ module fir_17#(parameter WIDTH = 16)
 			(clk, 
             rst,
 			start_i,
+			merge_finished_i,
             data_i,  
             data_o);
 
 
 /* Ein - und Ausgänge */	
 input clk, rst;
-input start_i;
+input start_i, merge_finished_i;
 input signed [WIDTH-1:0] data_i;
 output wire signed [WIDTH-1:0] data_o;
 
@@ -43,8 +44,7 @@ reg signed [2*WIDTH-1:0] acc_r [0:16];
 reg signed[2*WIDTH-1:0] sum;
 reg signed[2*WIDTH-1:0] sum_r;
 
-always @ (posedge clk)
-    begin
+always @ (posedge clk) begin
         if (rst) begin
 
             sum_r     <= 0;
@@ -110,24 +110,28 @@ always @ (posedge clk)
 
         else begin
           
-            /* Update Buffer */
-            buff[0]  <= data_i;
-            buff[1]  <= buff[0];        
-            buff[2]  <= buff[1];         
-            buff[3]  <= buff[2];      
-            buff[4]  <= buff[3];      
-            buff[5]  <= buff[4];       
-            buff[6]  <= buff[5];    
-            buff[7]  <= buff[6];       
-            buff[8]  <= buff[7];       
-            buff[9]  <= buff[8];       
-            buff[10] <= buff[9];        
-            buff[11] <= buff[10];       
-            buff[12] <= buff[11];       
-            buff[13] <= buff[12];       
-            buff[14] <= buff[13];
-            buff[15] <= buff[14];
-            buff[16] <= buff[15]; 
+            /* Update Buffer if data_i valid */
+			if (merge_finished_i) begin
+				buff[0]  <= data_i;
+				buff[1]  <= buff[0];        
+				buff[2]  <= buff[1];         
+				buff[3]  <= buff[2];      
+				buff[4]  <= buff[3];      
+				buff[5]  <= buff[4];       
+				buff[6]  <= buff[5];    
+				buff[7]  <= buff[6];       
+				buff[8]  <= buff[7];       
+				buff[9]  <= buff[8];       
+				buff[10] <= buff[9];        
+				buff[11] <= buff[10];       
+				buff[12] <= buff[11];       
+				buff[13] <= buff[12];       
+				buff[14] <= buff[13];
+				buff[15] <= buff[14];
+				buff[16] <= buff[15]; 
+			end
+			
+			
 
            /* Register Multiplication */
             acc_r[0]    <= acc[0];
@@ -178,7 +182,8 @@ always @ (*)begin
 	acc[16]= acc_r[16]; 
 	
     if (start_i) begin
-            /* Multiply Stage */
+	
+        /* Multiply Stage */
         acc[0]    = h_0 * buff[0];
         acc[1]    = h_1 * buff[1];
         acc[2]    = h_2 * buff[2];
