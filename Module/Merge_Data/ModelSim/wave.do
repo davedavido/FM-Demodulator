@@ -1,10 +1,3 @@
-vlog -work work -stats=none C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Merge_Data/merge_data.v
-vlog -work work -stats=none C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Merge_Data/merge_data_tb.v
-vlog -work work -stats=none C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Split_Data/split_data.v
-vlog -work work -stats=none C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Merge_Data/bitstream_detect.v
-
-vsim -gui work.merge_data_tb
-
 onerror {resume}
 quietly WaveActivateNextPane {} 0
 add wave -noupdate /merge_data_tb/clk
@@ -38,6 +31,3 @@ configure wave -timeline 0
 configure wave -timelineunits ps
 update
 WaveRestoreZoom {5 ps} {105 ps}
-
-
-run -all
