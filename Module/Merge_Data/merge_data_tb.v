@@ -6,73 +6,53 @@ parameter WIDTH = 16;
 
 reg					clk;
 reg					rst;
-reg signed 			data_i;
+reg signed [7:0]	data_i;
 reg 				tmp;
-reg 				start_i;
-
-wire signed data_o;
-wire merge_finished;
-wire  [2*WIDTH-1:0] merge_to_split;
-wire				start;
+reg					start_i;
 
 integer				fd_i, fd_o;
 
-
-/* bitstream_detect DUT0(
-    .clk				(clk),
-	.rst				(rst),
-	.data_i				(data_i),
-	.start_o			(start)
-); */
-
+wire signed [2*WIDTH-1:0]	data_o;
+wire finished_o;
 				
-merge_data #(.WIDTH(WIDTH)) DUT1(
+merge_data #(.WIDTH(WIDTH)) DUT(
     .clk				(clk),
 	.rst				(rst),
 	.data_uart_i		(data_i),
 	.start_i			(start_i),
-    .merge_finished_o	(merge_finished),
-    .data_o				(merge_to_split)
+    .merge_finished_o	(merge_finished_o),
+    .data_o				(data_o)
 );
 
-split_data #(.WIDTH(WIDTH)) DUT2(
-	.clk				(clk),
-	.rst				(rst),
-	.start_i			(start_i),
-	.merge_finished_i	(merge_finished),
-	.data_i				(merge_to_split),
-	.data_uart_o 		(data_o)
-);	 
+always
+	#1 	clk=!clk;
+	 
 initial begin
-	fd_i = $fopen("input_Bits.txt", "r");
-	fd_o = $fopen("Output_Loopback.txt", "w");
+	fd_i = $fopen("Input_Bytes.txt", "r");
+	fd_o = $fopen("Output_Merged.txt", "w");
 	
 	if (fd_i)     $display("File was opened successfully : %0d", fd_i);
     else      	  $display("File was NOT opened successfully : %0d", fd_i);
 
     if (fd_o)     $display("File was opened successfully : %0d", fd_o);
     else      	  $display("File was NOT opened successfully : %0d", fd_o);
-	
 	#10
 	clk				=	0;
 	data_i			=	0;
 	tmp 			= 	0;
-	start_i			= 	0;
 	rst				=	1;
-	#20;
+	#10;
 	rst				=	0;
-	start_i			=	1;
+	start_i 		=	1;
 
-end	
-
-always
-	#1 	clk=!clk;	
+end		
 
 always @ (posedge clk) begin
 	if(start_i) begin
 		if (!($feof(fd_i))) begin
-				tmp = $fscanf(fd_i, "%b\n", data_i);
-				$fwrite(fd_o, "%b\n", data_o);
+			tmp = $fscanf(fd_i, "%x\n", data_i);
+			if(merge_finished_o)
+				$fwrite(fd_o, "%x\n", data_o);
 		end else begin
 			$fclose(fd_i);
 			$fclose(fd_o);
