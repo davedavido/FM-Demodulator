@@ -9,31 +9,27 @@ print(*l, sep="\n")
 #Pre Formatted Input Data
 data = np.loadtxt('fm_bytes.txt', dtype='int')
 
-print(len(data))
-
-#Get 7.2 Million Samples
-data_in = data[0:720000].tolist()
+#Get 7 Million Samples
+data_in = data[0:7000000].tolist()
 
 ser = serial.Serial('COM4', 115200, serial.EIGHTBITS, serial.PARITY_NONE, serial.STOPBITS_ONE, 0.1)
 
-N = int(len(data_in)/500)
+N = int(len(data_in)/700)
 
 print(N)
 
 output = np.zeros((N, int(len(data_in)/N)))
 
-for i in range (N-1):
-    ser.write(data_in[int(i*len(data_in)/N ): int((i+1)*len(data_in)/N)])
+print('try to read from COM Port')
 
-    print('try to read from COM Port')
+for i in range (N-1):
+    print(i,'von',(N-1))
+    ser.write(data_in[int(i*len(data_in)/N): int((i+1)*len(data_in)/N)])
     r = ser.read(len(data_in))
 
     mv = memoryview(r).cast('B')
-
     data_o = (np.array(mv))
-
-    output[i,:] = data_o
-
+    output[i, :] = data_o
 
 print('data transfer successfull \n\rformatting output array ...')
 x = output.reshape(1, len(data_in))
