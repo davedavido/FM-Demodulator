@@ -6,7 +6,7 @@ parameter WIDTH = 16;
 
 reg					clk;
 reg					rst;
-reg signed [7:0]	data_i;
+reg 		[7:0]	data_i;
 reg 				tmp;
 reg					start_i;
 
@@ -50,9 +50,9 @@ end
 always @ (posedge clk) begin
 	if(start_i) begin
 		if (!($feof(fd_i))) begin
-			tmp = $fscanf(fd_i, "%x\n", data_i);
+			tmp = $fscanf(fd_i, "%d\n", data_i);
 			if(merge_finished_o)
-				$fwrite(fd_o, "%x\n", data_o);
+				$fwrite(fd_o, "%d\n", data_o);
 		end else begin
 			$fclose(fd_i);
 			$fclose(fd_o);

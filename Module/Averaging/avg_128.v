@@ -40,7 +40,6 @@ always @(posedge clk) begin
     end
 
     else begin
-		data_i_r <= data_i_r;
 		count_r 		<= count;
         sum_r 			<= sum;
 		

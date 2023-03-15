@@ -5,13 +5,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	merge_data
 
-} {} {}} C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Komplex_Mult/conj_c_mult.v {1 {vlog -work work -stats=none C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Komplex_Mult/conj_c_mult.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module conj_c_mult
-
-Top level modules:
-	conj_c_mult
-
 } {} {}} C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Package_Detect/pkg_detect.v {1 {vlog -work work -stats=none C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Package_Detect/pkg_detect.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module pkg_detect
@@ -19,12 +12,19 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	pkg_detect
 
-} {} {}} C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Averaging/avg_128.v {1 {vlog -work work -stats=none C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Averaging/avg_128.v
+} {} {}} C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Komplex_Mult/conj_c_mult.v {1 {vlog -work work -stats=none C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Komplex_Mult/conj_c_mult.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module avg_128
+-- Compiling module conj_c_mult
 
 Top level modules:
-	avg_128
+	conj_c_mult
+
+} {} {}} C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v {1 {vlog -work work -stats=none C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module top_tb
+
+Top level modules:
+	top_tb
 
 } {} {}} C:/Users/David/Documents/GitHub/FM-Demodulator/Module/FIR_Filter/Verilog/fir_17.v {1 {vlog -work work -stats=none C:/Users/David/Documents/GitHub/FM-Demodulator/Module/FIR_Filter/Verilog/fir_17.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020

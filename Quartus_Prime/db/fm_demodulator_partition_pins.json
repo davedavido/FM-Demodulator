@@ -1,0 +1,21 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "uart_o",
+					"strict" : false
+				},
+				{
+					"name" : "btn_i",
+					"strict" : false
+				},
+				{
+					"name" : "uart_i",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

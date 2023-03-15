@@ -14,7 +14,7 @@ output [7:0] data_uart_o;
 
 
 /*Buffer*/
-reg	[7:0] buff [0:3];		
+reg			[7:0] buff [0:3];		
 
 reg			[1:0] count_r, count;                    // Zähler für die Anzahl der Samples
 
@@ -32,13 +32,14 @@ always @ (posedge clk) begin
 		end
 		
 		else begin
+			
 			count_r  <= count;
 			
 			if (merge_finished_i) begin
 				/* Update Buffer */
-				buff[0]  <= 0;
+				buff[0]  <= 0; /*High Byte*/ 
 				buff[1]  <= 0;    
-				buff[2]  <= data_i[15:8]; /*High Byte*/      
+				buff[2]  <= data_i[15:8];      
 				buff[3]  <= data_i[7:0];  /*Low Byte*/  
 			end
 		end 
