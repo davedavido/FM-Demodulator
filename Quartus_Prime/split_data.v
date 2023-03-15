@@ -8,7 +8,7 @@ module split_data #(parameter WIDTH = 16) (clk,
 /* Ein- und Ausgänge */		
 input clk, rst;
 input start_i, merge_finished_i;
-input signed [2*WIDTH-1:0] data_i;
+input signed [WIDTH-1:0] data_i;
 
 output [7:0] data_uart_o;	
 
@@ -37,9 +37,9 @@ always @ (posedge clk) begin
 
 			if (merge_finished_i) begin
 				/* Update Buffer */
-				buff[0]  <= data_i[31:24]; /*High Byte*/ 
-				buff[1]  <= data_i[23:16];    
-				buff[2]  <= data_i[15:8];      
+				buff[0]  <= 0; 
+				buff[1]  <= 0;    
+				buff[2]  <= data_i[15:8]; /*High Byte*/     
 				buff[3]  <= data_i[7:0];  /*Low Byte*/  
 			end
 		end 

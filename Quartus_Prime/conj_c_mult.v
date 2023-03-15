@@ -13,15 +13,15 @@ input clk, rst;
 input start_i;
 input merge_finished_i;
 input signed [WIDTH-1:0] real_i, imag_i;       		// Eingangssignal
-output wire signed  [2*WIDTH-1:0] demod_o;   	  	    // Ausgangssignal
+output wire signed  [WIDTH-1:0] demod_o;   	  	    // Ausgangssignal
 
 /*Intern*/
 
-reg signed [2*WIDTH-1:0] last_in_real_r;       		// Last Input real
-reg signed [2*WIDTH-1:0] last_in_imag_r;       		// Last Input imag
+reg signed [WIDTH-1:0] last_in_real_r;       		// Last Input real
+reg signed [WIDTH-1:0] last_in_imag_r;       		// Last Input imag
 
-reg signed [2*WIDTH-1:0] real_i_r;
-reg signed [2*WIDTH-1:0] imag_i_r;
+reg signed [WIDTH-1:0] real_i_r;
+reg signed [WIDTH-1:0] imag_i_r;
 
 reg signed [2*WIDTH-1:0] k1;
 reg signed [2*WIDTH-1:0] k3;

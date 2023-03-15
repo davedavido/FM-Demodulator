@@ -7,14 +7,14 @@ l = list(serial.tools.list_ports.comports())
 print(*l, sep="\n")
 
 #Pre Formatted Input Data
-data = np.loadtxt('fm_bytes.txt', dtype='int')
+data_in = np.loadtxt('input_data.txt', dtype='int').tolist()
 
 #Get 7 Million Samples
-data_in = data[0:7000000].tolist()
+#data_in = data[0:7000000].tolist()
 
 ser = serial.Serial('COM4', 115200, serial.EIGHTBITS, serial.PARITY_NONE, serial.STOPBITS_ONE, 0.1)
 
-N = int(len(data_in)/700)
+N = int(len(data_in)/100)
 
 print(N)
 
@@ -22,8 +22,8 @@ output = np.zeros((N, int(len(data_in)/N)))
 
 print('try to read from COM Port')
 
-for i in range (N-1):
-    print(i,'von',(N-1))
+for i in range (N):
+    print(i,'von',(N))
     ser.write(data_in[int(i*len(data_in)/N): int((i+1)*len(data_in)/N)])
     r = ser.read(len(data_in))
 
@@ -45,7 +45,7 @@ fm_demod = np.zeros((len(x_mod)//4,), dtype=np.int32)
 
 for i in range(0, len(x_mod), 4):
     val = x_mod[i] << np.int32(24) | x_mod[i+1] << np.int32(16) | x_mod[i+2] << np.int32(8) | x_mod[i+3]
-    fm_demod[i//4] = np.int32(val)
+    fm_demod[i//4] = np.int16(val)
 
 np.savetxt('output_data.txt', X=fm_demod, fmt='%d', delimiter= ' \n')
 

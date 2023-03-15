@@ -12,15 +12,15 @@ module avg_128 #(parameter WIDTH = 16,
 input clk, rst;
 input start_i;
 input merge_finished_i;
-input signed [2*WIDTH-1:0] data_i;       // Eingangssignal
-output wire signed  [2*WIDTH-1:0] data_o;   // Ausgangssignal
+input signed [WIDTH-1:0] data_i;       // Eingangssignal
+output wire signed  [WIDTH-1:0] data_o;   // Ausgangssignal
 
 /*Intern*/
 
-reg signed [2*WIDTH-1:0] buff [0:SAMPLES-1];       
-reg signed [2*WIDTH-1:0] sum; 
-reg signed [2*WIDTH-1:0] sum_r; 
-reg signed [2*WIDTH-1:0] data_i_r;              
+reg signed [WIDTH-1:0] buff [0:SAMPLES-1];       
+reg signed [WIDTH-1:0] sum; 
+reg signed [WIDTH-1:0] sum_r; 
+reg signed [WIDTH-1:0] data_i_r;              
 reg              [6:0] count;                    
 reg              [6:0] count_r; 
 
@@ -58,7 +58,8 @@ always @(*) begin
     end
 end
 
-assign data_o = (data_i_r - (sum >>> 7));  /* Wenn jetztiges Sample mit betrachtet wird*/
+assign data_o = (sum[15]) 	? (data_i_r - (sum >>> 7) -1) : (data_i_r - (sum >>> 7)) ;
+//assign data_o = (data_i_r - (sum >>> 7));  /* Wenn jetztiges Sample mit betrachtet wird*/
 //assign data_o = data_i_r - mean_r; /* Ohne das jetzige Sample */
 
 endmodule

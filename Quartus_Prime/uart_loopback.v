@@ -15,10 +15,11 @@ wire 	[7:0]				uart_rx;
 wire  [7:0]				uart_tx;
 wire 						clk_logic;
 wire 						uart_rx_valid;
+wire						merge_finished;
 reg 						uart_tx_send;
 
 wire [31:0]				data_complex;
-wire [31:0]				mult_to_avg, avg_to_fir, fir_to_split;
+wire [15:0]				mult_to_avg, avg_to_fir, fir_to_split;
 
 // Reset Definition ////////
 wire 						rst_p;

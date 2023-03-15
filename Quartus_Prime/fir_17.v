@@ -1,4 +1,4 @@
-module fir_17#(parameter WIDTH = 32) 
+module fir_17#(parameter WIDTH = 16) 
 			(clk, 
             rst,
 			start_i,
@@ -37,12 +37,12 @@ reg signed [WIDTH-1:0] h_16;
 reg signed [WIDTH-1:0] buff [0:16];
 
 /*Multiply Stage 32-Bit * 0.16 = 48-Bit*/
-reg signed [47:0] acc [0:16];
-reg signed [47:0] acc_r [0:16];
+reg signed [2*WIDTH-1:0] acc [0:16];
+reg signed [2*WIDTH-1:0] acc_r [0:16];
 
 /*Adder Stage*/
-reg signed[47:0] sum;
-reg signed[47:0] sum_r;
+reg signed[2*WIDTH-1:0] sum;
+reg signed[2*WIDTH-1:0] sum_r;
 
 always @ (posedge clk) begin
         if (rst) begin
@@ -209,6 +209,6 @@ end
 
 /* Output Format = 16.0 */
 
-assign data_o = sum_r >> 16;
+assign data_o = (sum_r[31]) 	? ((sum_r >>> 16) + 1) : (sum_r >>> 16) ;
 
 endmodule
