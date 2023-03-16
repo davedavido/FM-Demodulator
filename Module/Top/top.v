@@ -14,7 +14,7 @@ parameter WIDTH = 16;
 input clk, rst;
 input start_i;
 input signed [7:0] data_i;
-output wire	 [7:0] data_o; //nichtmehr signed, da bytes sonst falsch formatiert
+output wire	signed [15:0] data_o; //nichtmehr signed, da bytes sonst falsch formatiert
 output wire valid_o;
 
 /* Intern */
@@ -60,7 +60,7 @@ avg_128 AVG_128(
 .start_i			(start_i),
 .merge_finished_i	(merge_finished),
 .data_i				(mult_to_avg),
-.data_o				(avg_to_fir)
+.data_o				(data_o)
 );
 
 fir_17 FIR_17(
@@ -72,7 +72,7 @@ fir_17 FIR_17(
 .data_o				(fir_to_split)
 ); 
 
-split_data SPLIT_DATA(
+/* split_data SPLIT_DATA(
 .clk				(clk),
 .rst				(rst),
 .start_i			(start_i),
@@ -80,6 +80,6 @@ split_data SPLIT_DATA(
 .data_i				(fir_to_split),
 .data_uart_o		(data_o)
 );
-			
+	 */		
 			
 endmodule

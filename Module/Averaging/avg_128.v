@@ -18,11 +18,11 @@ output wire signed [WIDTH-1:0] data_o;   // Ausgangssignal
 /*Intern*/
 
 reg signed [WIDTH-1:0] buff [0:SAMPLES-1];       // Array für die Samples
-reg signed [WIDTH-1:0] sum;                // Variable für die Summe der Samples
+reg signed [WIDTH:0] sum;                // Variable für die Summe der Samples
 reg              [6:0] count;                    // Zähler für die Anzahl der Samples
 
 
-reg signed [WIDTH-1:0] sum_r;                // Variable für die Summe der Samples            
+reg signed [WIDTH:0] sum_r;                // Variable für die Summe der Samples -17 Bit!           
 reg              [7:0] count_r;                    // Zähler für die Anzahl der Samples
 reg signed [WIDTH-1:0] data_i_r;
 
@@ -61,7 +61,7 @@ always @(*) begin
 	
 end
 
-assign data_o = (sum[15]) 	? (data_i_r - (sum >>> 7) -1) : (data_i_r - (sum >>> 7)) ; /* Wenn jetztiges Sample mit betrachtet wird*/
+assign data_o = (sum[16]) 	? (data_i_r - (sum >>> 7) -1) : (data_i_r - (sum >>> 7)) ; /* Wenn jetztiges Sample mit betrachtet wird*/
 															
 //assign data_o = data_i_r - mean_r; /* Ohne das jetzige Sample */
 

@@ -41,8 +41,8 @@ reg signed [2*WIDTH-1:0] acc [0:16];
 reg signed [2*WIDTH-1:0] acc_r [0:16];
 
 /*Adder Stage*/
-reg signed[2*WIDTH-1:0] sum;
-reg signed[2*WIDTH-1:0] sum_r;
+reg signed[2*WIDTH:0] sum;
+reg signed[2*WIDTH:0] sum_r;
 
 always @ (posedge clk) begin
         if (rst) begin
@@ -209,6 +209,6 @@ end
 
 /* Output Format = 16.0 */
 
-assign data_o = (sum_r[31]) 	? ((sum_r >>> 16) + 1) : (sum_r >>> 16) ;
+assign data_o = (sum_r[32]) 	? ((sum_r >>> 16) + 1) : (sum_r >>> 16) ;
 
 endmodule

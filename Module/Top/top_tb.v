@@ -9,7 +9,7 @@ reg 				tmp;
 
 integer				fd_i, fd_o;
 
-wire [7:0]			data_o;
+wire signed [15:0]			data_o;
 wire				valid_o;
 				
 top DUT(

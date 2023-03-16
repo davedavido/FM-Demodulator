@@ -28,11 +28,8 @@ add wave -noupdate -radix decimal -childformat {{{/top_tb/DUT/FIR_17/buff[0]} -r
 add wave -noupdate -radix decimal -childformat {{{/top_tb/DUT/FIR_17/acc_r[0]} -radix decimal} {{/top_tb/DUT/FIR_17/acc_r[1]} -radix decimal} {{/top_tb/DUT/FIR_17/acc_r[2]} -radix decimal} {{/top_tb/DUT/FIR_17/acc_r[3]} -radix decimal} {{/top_tb/DUT/FIR_17/acc_r[4]} -radix decimal} {{/top_tb/DUT/FIR_17/acc_r[5]} -radix decimal} {{/top_tb/DUT/FIR_17/acc_r[6]} -radix decimal} {{/top_tb/DUT/FIR_17/acc_r[7]} -radix decimal} {{/top_tb/DUT/FIR_17/acc_r[8]} -radix decimal} {{/top_tb/DUT/FIR_17/acc_r[9]} -radix decimal} {{/top_tb/DUT/FIR_17/acc_r[10]} -radix decimal} {{/top_tb/DUT/FIR_17/acc_r[11]} -radix decimal} {{/top_tb/DUT/FIR_17/acc_r[12]} -radix decimal} {{/top_tb/DUT/FIR_17/acc_r[13]} -radix decimal} {{/top_tb/DUT/FIR_17/acc_r[14]} -radix decimal} {{/top_tb/DUT/FIR_17/acc_r[15]} -radix decimal} {{/top_tb/DUT/FIR_17/acc_r[16]} -radix decimal}} -subitemconfig {{/top_tb/DUT/FIR_17/acc_r[0]} {-height 15 -radix decimal} {/top_tb/DUT/FIR_17/acc_r[1]} {-height 15 -radix decimal} {/top_tb/DUT/FIR_17/acc_r[2]} {-height 15 -radix decimal} {/top_tb/DUT/FIR_17/acc_r[3]} {-height 15 -radix decimal} {/top_tb/DUT/FIR_17/acc_r[4]} {-height 15 -radix decimal} {/top_tb/DUT/FIR_17/acc_r[5]} {-height 15 -radix decimal} {/top_tb/DUT/FIR_17/acc_r[6]} {-height 15 -radix decimal} {/top_tb/DUT/FIR_17/acc_r[7]} {-height 15 -radix decimal} {/top_tb/DUT/FIR_17/acc_r[8]} {-height 15 -radix decimal} {/top_tb/DUT/FIR_17/acc_r[9]} {-height 15 -radix decimal} {/top_tb/DUT/FIR_17/acc_r[10]} {-height 15 -radix decimal} {/top_tb/DUT/FIR_17/acc_r[11]} {-height 15 -radix decimal} {/top_tb/DUT/FIR_17/acc_r[12]} {-height 15 -radix decimal} {/top_tb/DUT/FIR_17/acc_r[13]} {-height 15 -radix decimal} {/top_tb/DUT/FIR_17/acc_r[14]} {-height 15 -radix decimal} {/top_tb/DUT/FIR_17/acc_r[15]} {-height 15 -radix decimal} {/top_tb/DUT/FIR_17/acc_r[16]} {-height 15 -radix decimal}} /top_tb/DUT/FIR_17/acc_r
 add wave -noupdate -divider {PKG Detect}
 add wave -noupdate -divider Split_data
-add wave -noupdate /top_tb/DUT/SPLIT_DATA/data_i
-add wave -noupdate /top_tb/DUT/SPLIT_DATA/data_uart_o
-add wave -noupdate /top_tb/DUT/SPLIT_DATA/count_r
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {77 ps} 0}
+WaveRestoreCursors {{Cursor 1} {1925 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 250
 configure wave -valuecolwidth 343
@@ -48,4 +45,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {0 ps} {132 ps}
+WaveRestoreZoom {1841 ps} {1973 ps}
