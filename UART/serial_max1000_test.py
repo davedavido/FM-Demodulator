@@ -11,7 +11,7 @@ data = np.loadtxt('fm_bytes.txt', dtype='int')
 
 #Get 7.2 Million Samples
 data_in = data[0:2000000].tolist()
-#data_in = data[0:50000].tolist()
+#data_in = data[0:5000].tolist()
 
 ser = serial.Serial('COM4', 115200, serial.EIGHTBITS, serial.PARITY_NONE, serial.STOPBITS_ONE, 0.1)
 
@@ -48,6 +48,6 @@ for i in range(0, len(x_mod), 4):
     val = x_mod[i] << np.int32(24) | x_mod[i+1] << np.int32(16) | x_mod[i+2] << np.int32(8) | x_mod[i+3]
     fm_demod[i//4] = np.int16(val)
 
-np.savetxt('output_data_0.16.txt', X=fm_demod, fmt='%d', delimiter= ' \n')
+np.savetxt('output_data_0.17.txt', X=fm_demod, fmt='%d', delimiter= ' \n')
 
 print('done')
