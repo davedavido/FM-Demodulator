@@ -10,8 +10,8 @@ print(*l, sep="\n")
 data = np.loadtxt('fm_bytes.txt', dtype='int')
 
 #Get 7.2 Million Samples
-data_in = data[0:7200000].tolist()
-#data_in = data[0:2000].tolist()
+#data_in = data[0:7200000].tolist()
+data_in = data[0:50000].tolist()
 
 ser = serial.Serial('COM4', 115200, serial.EIGHTBITS, serial.PARITY_NONE, serial.STOPBITS_ONE, 0.1)
 
