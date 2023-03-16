@@ -274,3 +274,5 @@ do top.do
 #    Time: 4020 ps  Iteration: 1  Instance: /top_tb
 # 1
 # Break in Module top_tb at C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v line 57
+# End time: 20:59:32 on Mar 16,2023, Elapsed time: 0:47:03
+# Errors: 0, Warnings: 3
