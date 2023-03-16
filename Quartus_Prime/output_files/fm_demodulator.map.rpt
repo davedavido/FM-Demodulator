@@ -1,5 +1,5 @@
 Analysis & Synthesis report for fm_demodulator
-Thu Mar 16 16:12:34 2023
+Thu Mar 16 18:02:48 2023
 Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
@@ -84,15 +84,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Mar 16 16:12:34 2023       ;
+; Analysis & Synthesis Status        ; Successful - Thu Mar 16 18:02:48 2023       ;
 ; Quartus Prime Version              ; 21.1.1 Build 850 06/23/2022 SJ Lite Edition ;
 ; Revision Name                      ; fm_demodulator                              ;
 ; Top-level Entity Name              ; uart_loopback                               ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 8,495                                       ;
-;     Total combinational functions  ; 5,022                                       ;
-;     Dedicated logic registers      ; 5,017                                       ;
-; Total registers                    ; 5017                                        ;
+; Total logic elements               ; 8,499                                       ;
+;     Total combinational functions  ; 5,026                                       ;
+;     Dedicated logic registers      ; 5,018                                       ;
+; Total registers                    ; 5018                                        ;
 ; Total pins                         ; 4                                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 266,240                                     ;
@@ -324,20 +324,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                                  ;
 +---------------------------------------------+----------------------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 8,495                                                                                  ;
+; Estimated Total logic elements              ; 8,499                                                                                  ;
 ;                                             ;                                                                                        ;
-; Total combinational functions               ; 5022                                                                                   ;
+; Total combinational functions               ; 5026                                                                                   ;
 ; Logic element usage by number of LUT inputs ;                                                                                        ;
-;     -- 4 input functions                    ; 2326                                                                                   ;
-;     -- 3 input functions                    ; 1706                                                                                   ;
+;     -- 4 input functions                    ; 2327                                                                                   ;
+;     -- 3 input functions                    ; 1709                                                                                   ;
 ;     -- <=2 input functions                  ; 990                                                                                    ;
 ;                                             ;                                                                                        ;
 ; Logic elements by mode                      ;                                                                                        ;
-;     -- normal mode                          ; 3532                                                                                   ;
-;     -- arithmetic mode                      ; 1490                                                                                   ;
+;     -- normal mode                          ; 3534                                                                                   ;
+;     -- arithmetic mode                      ; 1492                                                                                   ;
 ;                                             ;                                                                                        ;
-; Total registers                             ; 5017                                                                                   ;
-;     -- Dedicated logic registers            ; 5017                                                                                   ;
+; Total registers                             ; 5018                                                                                   ;
+;     -- Dedicated logic registers            ; 5018                                                                                   ;
 ;     -- I/O registers                        ; 0                                                                                      ;
 ;                                             ;                                                                                        ;
 ; I/O pins                                    ; 4                                                                                      ;
@@ -349,8 +349,8 @@ https://fpgasoftware.intel.com/eula.
 ;     -- PLLs                                 ; 1                                                                                      ;
 ;                                             ;                                                                                        ;
 ; Maximum fan-out node                        ; logic_pll:PLL|altpll:altpll_component|logic_pll_altpll:auto_generated|wire_pll1_clk[0] ;
-; Maximum fan-out                             ; 4330                                                                                   ;
-; Total fan-out                               ; 34923                                                                                  ;
+; Maximum fan-out                             ; 4331                                                                                   ;
+; Total fan-out                               ; 34938                                                                                  ;
 ; Average fan-out                             ; 3.43                                                                                   ;
 +---------------------------------------------+----------------------------------------------------------------------------------------+
 
@@ -360,8 +360,8 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                                                              ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                       ; Entity Name                       ; Library Name ;
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
-; |uart_loopback                                                                                                                          ; 5022 (1)            ; 5017 (0)                  ; 266240      ; 0          ; 4            ; 0       ; 2         ; 4    ; 0            ; 0          ; |uart_loopback                                                                                                                                                                                                                                                                                                                                            ; uart_loopback                     ; work         ;
-;    |avg_128:AVG|                                                                                                                        ; 1660 (1660)         ; 2090 (2090)               ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |uart_loopback|avg_128:AVG                                                                                                                                                                                                                                                                                                                                ; avg_128                           ; work         ;
+; |uart_loopback                                                                                                                          ; 5026 (1)            ; 5018 (0)                  ; 266240      ; 0          ; 4            ; 0       ; 2         ; 4    ; 0            ; 0          ; |uart_loopback                                                                                                                                                                                                                                                                                                                                            ; uart_loopback                     ; work         ;
+;    |avg_128:AVG|                                                                                                                        ; 1664 (1664)         ; 2091 (2091)               ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |uart_loopback|avg_128:AVG                                                                                                                                                                                                                                                                                                                                ; avg_128                           ; work         ;
 ;    |conj_c_mult:MULT|                                                                                                                   ; 97 (97)             ; 96 (96)                   ; 0           ; 0          ; 4            ; 0       ; 2         ; 0    ; 0            ; 0          ; |uart_loopback|conj_c_mult:MULT                                                                                                                                                                                                                                                                                                                           ; conj_c_mult                       ; work         ;
 ;       |lpm_mult:Mult0|                                                                                                                  ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 2            ; 0       ; 1         ; 0    ; 0            ; 0          ; |uart_loopback|conj_c_mult:MULT|lpm_mult:Mult0                                                                                                                                                                                                                                                                                                            ; lpm_mult                          ; work         ;
 ;          |mult_pgs:auto_generated|                                                                                                      ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 2            ; 0       ; 1         ; 0    ; 0            ; 0          ; |uart_loopback|conj_c_mult:MULT|lpm_mult:Mult0|mult_pgs:auto_generated                                                                                                                                                                                                                                                                                    ; mult_pgs                          ; work         ;
@@ -1098,7 +1098,7 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 5017  ;
+; Total registers                              ; 5018  ;
 ; Number of registers using Synchronous Clear  ; 552   ;
 ; Number of registers using Synchronous Load   ; 71    ;
 ; Number of registers using Asynchronous Clear ; 684   ;
@@ -1137,17 +1137,17 @@ Encoding Type:  One-Hot
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
 ; 3:1                ; 67 bits   ; 134 LEs       ; 67 LEs               ; 67 LEs                 ; Yes        ; |uart_loopback|merge_data:MERGE|buff[2][1]     ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|split_data:SPLIT|buff[2][4]     ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|split_data:SPLIT|buff[3][5]     ;
 ; 3:1                ; 576 bits  ; 1152 LEs      ; 576 LEs              ; 576 LEs                ; Yes        ; |uart_loopback|conj_c_mult:MULT|imag_i_r[15]   ;
 ; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[0][15]         ;
 ; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[1][15]         ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[2][1]          ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[2][15]         ;
 ; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[3][15]         ;
 ; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[4][15]         ;
 ; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[5][15]         ;
 ; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[6][15]         ;
 ; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[7][15]         ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[8][12]         ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[8][15]         ;
 ; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[9][15]         ;
 ; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[10][15]        ;
 ; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[11][15]        ;
@@ -1156,45 +1156,45 @@ Encoding Type:  One-Hot
 ; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[14][15]        ;
 ; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[15][15]        ;
 ; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[16][15]        ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[17][15]        ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[18][14]        ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[19][9]         ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[20][13]        ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[21][7]         ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[22][15]        ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[23][12]        ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[24][7]         ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[25][6]         ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[26][7]         ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[27][12]        ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[28][10]        ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[29][6]         ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[30][14]        ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[31][1]         ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[32][14]        ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[33][0]         ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[34][1]         ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[35][6]         ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[36][0]         ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[37][10]        ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[38][4]         ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[39][0]         ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[17][13]        ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[18][0]         ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[19][14]        ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[20][7]         ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[21][0]         ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[22][2]         ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[23][6]         ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[24][1]         ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[25][8]         ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[26][9]         ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[27][2]         ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[28][14]        ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[29][8]         ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[30][10]        ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[31][7]         ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[32][7]         ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[33][7]         ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[34][7]         ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[35][9]         ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[36][10]        ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[37][9]         ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[38][14]        ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[39][14]        ;
 ; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[40][14]        ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[41][11]        ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[42][2]         ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[43][5]         ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[44][0]         ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[45][3]         ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[46][9]         ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[47][2]         ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[41][10]        ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[42][13]        ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[43][1]         ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[44][4]         ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[45][13]        ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[46][5]         ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[47][4]         ;
 ; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[48][5]         ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[49][7]         ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[49][15]        ;
 ; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[50][1]         ;
 ; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[51][1]         ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[52][1]         ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[53][1]         ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[54][1]         ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[55][1]         ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[52][7]         ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[53][4]         ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[54][13]        ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[55][4]         ;
 ; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[56][13]        ;
 ; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[57][7]         ;
 ; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_loopback|avg_128:AVG|buff[58][5]         ;
@@ -1270,7 +1270,7 @@ Encoding Type:  One-Hot
 ; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |uart_loopback|uart_tx:TX|uart_data_input_r[7] ;
 ; 5:1                ; 8 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; Yes        ; |uart_loopback|uart_tx:TX|uart_data_r[0]       ;
 ; 3:1                ; 304 bits  ; 608 LEs       ; 304 LEs              ; 304 LEs                ; Yes        ; |uart_loopback|conj_c_mult:MULT|real_i_r[5]    ;
-; 128:1              ; 16 bits   ; 1360 LEs      ; 1360 LEs             ; 0 LEs                  ; No         ; |uart_loopback|avg_128:AVG|Mux0                ;
+; 128:1              ; 16 bits   ; 1360 LEs      ; 1360 LEs             ; 0 LEs                  ; No         ; |uart_loopback|avg_128:AVG|Mux10               ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
 
 
@@ -2698,27 +2698,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 103                         ;
-; cycloneiii_ff         ; 3015                        ;
+; cycloneiii_ff         ; 3016                        ;
 ;     ENA               ; 2427                        ;
 ;     ENA SCLR          ; 496                         ;
 ;     SCLR              ; 8                           ;
-;     plain             ; 84                          ;
-; cycloneiii_lcell_comb ; 4110                        ;
-;     arith             ; 1396                        ;
+;     plain             ; 85                          ;
+; cycloneiii_lcell_comb ; 4114                        ;
+;     arith             ; 1398                        ;
 ;         2 data inputs ; 239                         ;
-;         3 data inputs ; 1157                        ;
-;     normal            ; 2714                        ;
+;         3 data inputs ; 1159                        ;
+;     normal            ; 2716                        ;
 ;         0 data inputs ; 17                          ;
 ;         1 data inputs ; 25                          ;
 ;         2 data inputs ; 528                         ;
-;         3 data inputs ; 277                         ;
-;         4 data inputs ; 1867                        ;
+;         3 data inputs ; 278                         ;
+;         4 data inputs ; 1868                        ;
 ; cycloneiii_mac_mult   ; 2                           ;
 ; cycloneiii_mac_out    ; 2                           ;
 ; cycloneiii_pll        ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 14.30                       ;
-; Average LUT depth     ; 8.22                        ;
+; Max LUT depth         ; 14.40                       ;
+; Average LUT depth     ; 8.27                        ;
 +-----------------------+-----------------------------+
 
 
@@ -2768,38 +2768,38 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; avg_128:AVG|data_o[8]       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add3~16                                                                    ; N/A                                                                                                                                                            ;
 ; avg_128:AVG|data_o[9]       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add3~18                                                                    ; N/A                                                                                                                                                            ;
 ; avg_128:AVG|data_o[9]       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add3~18                                                                    ; N/A                                                                                                                                                            ;
-; avg_128:AVG|sum[0]          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~50                                                                    ; N/A                                                                                                                                                            ;
-; avg_128:AVG|sum[0]          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~50                                                                    ; N/A                                                                                                                                                            ;
-; avg_128:AVG|sum[10]         ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~47                                                                    ; N/A                                                                                                                                                            ;
-; avg_128:AVG|sum[10]         ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~47                                                                    ; N/A                                                                                                                                                            ;
-; avg_128:AVG|sum[11]         ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~46                                                                    ; N/A                                                                                                                                                            ;
-; avg_128:AVG|sum[11]         ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~46                                                                    ; N/A                                                                                                                                                            ;
-; avg_128:AVG|sum[12]         ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~45                                                                    ; N/A                                                                                                                                                            ;
-; avg_128:AVG|sum[12]         ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~45                                                                    ; N/A                                                                                                                                                            ;
-; avg_128:AVG|sum[13]         ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~44                                                                    ; N/A                                                                                                                                                            ;
-; avg_128:AVG|sum[13]         ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~44                                                                    ; N/A                                                                                                                                                            ;
-; avg_128:AVG|sum[14]         ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~43                                                                    ; N/A                                                                                                                                                            ;
-; avg_128:AVG|sum[14]         ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~43                                                                    ; N/A                                                                                                                                                            ;
-; avg_128:AVG|sum[15]         ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~42                                                                    ; N/A                                                                                                                                                            ;
-; avg_128:AVG|sum[15]         ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~42                                                                    ; N/A                                                                                                                                                            ;
-; avg_128:AVG|sum[1]          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~51                                                                    ; N/A                                                                                                                                                            ;
-; avg_128:AVG|sum[1]          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~51                                                                    ; N/A                                                                                                                                                            ;
-; avg_128:AVG|sum[2]          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~52                                                                    ; N/A                                                                                                                                                            ;
-; avg_128:AVG|sum[2]          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~52                                                                    ; N/A                                                                                                                                                            ;
-; avg_128:AVG|sum[3]          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~53                                                                    ; N/A                                                                                                                                                            ;
-; avg_128:AVG|sum[3]          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~53                                                                    ; N/A                                                                                                                                                            ;
-; avg_128:AVG|sum[4]          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~54                                                                    ; N/A                                                                                                                                                            ;
-; avg_128:AVG|sum[4]          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~54                                                                    ; N/A                                                                                                                                                            ;
-; avg_128:AVG|sum[5]          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~55                                                                    ; N/A                                                                                                                                                            ;
-; avg_128:AVG|sum[5]          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~55                                                                    ; N/A                                                                                                                                                            ;
-; avg_128:AVG|sum[6]          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~56                                                                    ; N/A                                                                                                                                                            ;
-; avg_128:AVG|sum[6]          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~56                                                                    ; N/A                                                                                                                                                            ;
+; avg_128:AVG|sum[0]          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~53                                                                    ; N/A                                                                                                                                                            ;
+; avg_128:AVG|sum[0]          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~53                                                                    ; N/A                                                                                                                                                            ;
+; avg_128:AVG|sum[10]         ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~49                                                                    ; N/A                                                                                                                                                            ;
+; avg_128:AVG|sum[10]         ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~49                                                                    ; N/A                                                                                                                                                            ;
+; avg_128:AVG|sum[11]         ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~48                                                                    ; N/A                                                                                                                                                            ;
+; avg_128:AVG|sum[11]         ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~48                                                                    ; N/A                                                                                                                                                            ;
+; avg_128:AVG|sum[12]         ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~47                                                                    ; N/A                                                                                                                                                            ;
+; avg_128:AVG|sum[12]         ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~47                                                                    ; N/A                                                                                                                                                            ;
+; avg_128:AVG|sum[13]         ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~46                                                                    ; N/A                                                                                                                                                            ;
+; avg_128:AVG|sum[13]         ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~46                                                                    ; N/A                                                                                                                                                            ;
+; avg_128:AVG|sum[14]         ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~45                                                                    ; N/A                                                                                                                                                            ;
+; avg_128:AVG|sum[14]         ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~45                                                                    ; N/A                                                                                                                                                            ;
+; avg_128:AVG|sum[15]         ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~44                                                                    ; N/A                                                                                                                                                            ;
+; avg_128:AVG|sum[15]         ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~44                                                                    ; N/A                                                                                                                                                            ;
+; avg_128:AVG|sum[1]          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~54                                                                    ; N/A                                                                                                                                                            ;
+; avg_128:AVG|sum[1]          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~54                                                                    ; N/A                                                                                                                                                            ;
+; avg_128:AVG|sum[2]          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~55                                                                    ; N/A                                                                                                                                                            ;
+; avg_128:AVG|sum[2]          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~55                                                                    ; N/A                                                                                                                                                            ;
+; avg_128:AVG|sum[3]          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~56                                                                    ; N/A                                                                                                                                                            ;
+; avg_128:AVG|sum[3]          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~56                                                                    ; N/A                                                                                                                                                            ;
+; avg_128:AVG|sum[4]          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~57                                                                    ; N/A                                                                                                                                                            ;
+; avg_128:AVG|sum[4]          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~57                                                                    ; N/A                                                                                                                                                            ;
+; avg_128:AVG|sum[5]          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~58                                                                    ; N/A                                                                                                                                                            ;
+; avg_128:AVG|sum[5]          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~58                                                                    ; N/A                                                                                                                                                            ;
+; avg_128:AVG|sum[6]          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~59                                                                    ; N/A                                                                                                                                                            ;
+; avg_128:AVG|sum[6]          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~59                                                                    ; N/A                                                                                                                                                            ;
 ; avg_128:AVG|sum[7]          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~16                                                                    ; N/A                                                                                                                                                            ;
 ; avg_128:AVG|sum[7]          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~16                                                                    ; N/A                                                                                                                                                            ;
-; avg_128:AVG|sum[8]          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~49                                                                    ; N/A                                                                                                                                                            ;
-; avg_128:AVG|sum[8]          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~49                                                                    ; N/A                                                                                                                                                            ;
-; avg_128:AVG|sum[9]          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~48                                                                    ; N/A                                                                                                                                                            ;
-; avg_128:AVG|sum[9]          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~48                                                                    ; N/A                                                                                                                                                            ;
+; avg_128:AVG|sum[8]          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~51                                                                    ; N/A                                                                                                                                                            ;
+; avg_128:AVG|sum[8]          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~51                                                                    ; N/A                                                                                                                                                            ;
+; avg_128:AVG|sum[9]          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~50                                                                    ; N/A                                                                                                                                                            ;
+; avg_128:AVG|sum[9]          ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add2~50                                                                    ; N/A                                                                                                                                                            ;
 ; fir_17:FIR|data_i[0]        ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add3~0                                                                     ; N/A                                                                                                                                                            ;
 ; fir_17:FIR|data_i[0]        ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add3~0                                                                     ; N/A                                                                                                                                                            ;
 ; fir_17:FIR|data_i[10]       ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; avg_128:AVG|Add3~20                                                                    ; N/A                                                                                                                                                            ;
@@ -3038,7 +3038,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
-    Info: Processing started: Thu Mar 16 16:12:03 2023
+    Info: Processing started: Thu Mar 16 18:02:17 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off fm_demodulator -c fm_demodulator
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -3159,7 +3159,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr
     Info (12023): Found entity 1: cmpr_drb File: C:/Users/David/Documents/GitHub/FM-Demodulator/Quartus_Prime/db/cmpr_drb.tdf Line: 23
 Info (12033): Analysis and Synthesis generated Signal Tap or debug node instance "auto_signaltap_0"
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2023.03.16.16:12:17 Progress: Loading sld502272da/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2023.03.16.18:02:31 Progress: Loading sld502272da/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -3434,16 +3434,16 @@ Info (144001): Generated suppressed messages file C:/Users/David/Documents/GitHu
 Critical Warning (35025): Partially connected in-system debug instance "auto_signaltap_0" to 229 of its 293 required data inputs, trigger inputs, acquisition clocks, and dynamic pins.  There were 0 illegal, 0 inaccessible, and 64 missing sources or connections.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 8762 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 8766 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
     Info (21059): Implemented 2 output pins
-    Info (21061): Implemented 8618 logic cells
+    Info (21061): Implemented 8622 logic cells
     Info (21064): Implemented 130 RAM segments
     Info (21065): Implemented 1 PLLs
     Info (21062): Implemented 4 DSP elements
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
-    Info: Peak virtual memory: 4911 megabytes
-    Info: Processing ended: Thu Mar 16 16:12:34 2023
+    Info: Peak virtual memory: 4915 megabytes
+    Info: Processing ended: Thu Mar 16 18:02:48 2023
     Info: Elapsed time: 00:00:31
     Info: Total CPU time (on all processors): 00:00:46
 
