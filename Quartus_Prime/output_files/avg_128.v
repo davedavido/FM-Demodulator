@@ -18,8 +18,8 @@ output wire signed [WIDTH-1:0] data_o;   // Ausgangssignal
 /*Intern*/
 
 reg signed [WIDTH-1:0] buff [0:SAMPLES-1];       
-reg signed [WIDTH+2:0] sum; 			//19-Bit for adding 3 16-Bit Vals
-reg signed [WIDTH+2:0] sum_r; 		//19-Bit for adding 3 16-Bit Vals
+reg signed [WIDTH+3:0] sum; 			//20-Bit for adding 3 16-Bit Vals
+reg signed [WIDTH+3:0] sum_r; 		//20-Bit for adding 3 16-Bit Vals
 reg signed [WIDTH-1:0] data_i_r;              
 reg              [6:0] count;                    
 reg              [6:0] count_r; 
@@ -58,7 +58,7 @@ always @(*) begin
     end
 end
 
-assign data_o = (sum[18]) 	? (data_i_r - (sum >>> 7) - 1) : (data_i_r - (sum >>> 7)) ;
+assign data_o = (sum[19]) 	? (data_i_r - (sum >>> 7) - 1) : (data_i_r - (sum >>> 7)) ;
 //assign data_o = (data_i_r - (sum >>> 7));  /* Wenn jetztiges Sample mit betrachtet wird*/
 //assign data_o = data_i_r - mean_r; /* Ohne das jetzige Sample */
 

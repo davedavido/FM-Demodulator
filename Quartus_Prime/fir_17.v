@@ -36,7 +36,7 @@ reg signed [WIDTH-1:0] h_16;
 /*Buffer*/ 
 reg signed [WIDTH-1:0] buff [0:16];
 
-/*Multiply Stage 32-Bit * 0.16 = 48-Bit*/
+/*Multiply Stage 16-Bit * 0.16 = 32-Bit*/
 reg signed [2*WIDTH-1:0] acc [0:16];
 reg signed [2*WIDTH-1:0] acc_r [0:16];
 
@@ -209,6 +209,6 @@ end
 
 /* Output Format = 16.0 */
 
-assign data_o = (sum_r[35]) 	? ((sum_r >>> 16) + 1) : (sum_r >>> 16) ;
+assign data_o = (sum_r[35]) 	? ((sum_r >>> 16) + 1 ) : (sum_r >>> 16) ;
 
 endmodule
