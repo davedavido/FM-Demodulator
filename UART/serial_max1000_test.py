@@ -7,14 +7,14 @@ l = list(serial.tools.list_ports.comports())
 print(*l, sep="\n")
 
 #Pre Formatted Input Data
-data_in = np.loadtxt('input_data.txt', dtype='int').tolist()
+data = np.loadtxt('fm_bytes .txt', dtype='int')
 
-#Get 7 Million Samples
-#data_in = data[0:7000000].tolist()
+#Get 7.2 Million Samples
+data_in = data[0:7200000].tolist()
 
 ser = serial.Serial('COM4', 115200, serial.EIGHTBITS, serial.PARITY_NONE, serial.STOPBITS_ONE, 0.1)
 
-N = int(len(data_in)/100)
+N = int(len(data_in)/500)
 
 print(N)
 

@@ -1,5 +1,5 @@
 Fitter report for fm_demodulator
-Wed Mar 15 19:50:37 2023
+Thu Mar 16 09:20:55 2023
 Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
@@ -73,7 +73,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Wed Mar 15 19:50:37 2023       ;
+; Fitter Status                      ; Successful - Thu Mar 16 09:20:55 2023       ;
 ; Quartus Prime Version              ; 21.1.1 Build 850 06/23/2022 SJ Lite Edition ;
 ; Revision Name                      ; fm_demodulator                              ;
 ; Top-level Entity Name              ; uart_loopback                               ;
@@ -159,14 +159,14 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.49        ;
+; Average used               ; 1.46        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  16.5%      ;
-;     Processor 3            ;  16.4%      ;
-;     Processor 4            ;  16.4%      ;
+;     Processor 2            ;  15.6%      ;
+;     Processor 3            ;  15.5%      ;
+;     Processor 4            ;  15.4%      ;
 +----------------------------+-------------+
 
 
@@ -2788,7 +2788,7 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:02
-Info (11888): Total time spent on timing analysis during the Fitter is 0.95 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.97 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -2801,10 +2801,10 @@ Warning (169177): 3 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2
 Warning (169202): Inconsistent VCCIO across multiple banks of configuration pins. The configuration pins are contained in 2 banks in 'Internal Configuration' configuration scheme and there are 2 different VCCIOs.
 Info (144001): Generated suppressed messages file C:/Users/David/Documents/GitHub/FM-Demodulator/Quartus_Prime/output_files/fm_demodulator.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 13 warnings
-    Info: Peak virtual memory: 5639 megabytes
-    Info: Processing ended: Wed Mar 15 19:50:38 2023
-    Info: Elapsed time: 00:00:21
-    Info: Total CPU time (on all processors): 00:00:37
+    Info: Peak virtual memory: 5641 megabytes
+    Info: Processing ended: Thu Mar 16 09:20:57 2023
+    Info: Elapsed time: 00:00:27
+    Info: Total CPU time (on all processors): 00:00:38
 
 
 +----------------------------+

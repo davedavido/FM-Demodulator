@@ -210,6 +210,6 @@ end
 
 /* Output Format = 16.0 */
 
-assign data_o = sum_r >> 16;
+assign data_o = (sum_r[31]) 	? ((sum_r >>> 16) + 1) : (sum_r >>> 16) ;
 
 endmodule
