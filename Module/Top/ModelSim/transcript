@@ -40,7 +40,7 @@ do top.do
 # Top level modules:
 # 	split_data
 # vsim -gui work.top_tb 
-# Start time: 18:28:51 on Mar 16,2023
+# Start time: 19:43:56 on Mar 16,2023
 # Loading work.top_tb
 # Loading work.top
 # Loading work.merge_data
@@ -49,9 +49,9 @@ do top.do
 # Loading work.fir_17
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: David  Hostname: DESKTOP-2A41VS7  ProcessID: 9920
-#           Attempting to use alternate WLF file "./wlftsr8kbt".
+#           Attempting to use alternate WLF file "./wlft893j14".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftsr8kbt
+#           Using alternate file: ./wlft893j14
 # File was opened successfully : -2147483645
 # File was opened successfully : -2147483644
 # ** Note: $finish    : C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v(57)
@@ -59,7 +59,7 @@ do top.do
 # 1
 # Break in Module top_tb at C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v line 57
 add wave -position insertpoint  \
-sim:/top_tb/DUT/FIR_17/sum_r
+sim:/top_tb/DUT/FIR_17/acc_r
 do top.do
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 # -- Compiling module top
@@ -101,10 +101,10 @@ do top.do
 # 
 # Top level modules:
 # 	split_data
-# End time: 18:29:45 on Mar 16,2023, Elapsed time: 0:00:54
+# End time: 19:46:15 on Mar 16,2023, Elapsed time: 0:02:19
 # Errors: 0, Warnings: 3
 # vsim -gui work.top_tb 
-# Start time: 18:29:45 on Mar 16,2023
+# Start time: 19:46:15 on Mar 16,2023
 # Loading work.top_tb
 # Loading work.top
 # Loading work.merge_data
@@ -113,26 +113,43 @@ do top.do
 # Loading work.fir_17
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: David  Hostname: DESKTOP-2A41VS7  ProcessID: 9920
-#           Attempting to use alternate WLF file "./wlft9n6hkh".
+#           Attempting to use alternate WLF file "./wlftw7z05v".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft9n6hkh
+#           Using alternate file: ./wlftw7z05v
 # File was opened successfully : -2147483645
 # File was opened successfully : -2147483644
 # ** Note: $finish    : C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v(57)
 #    Time: 4020 ps  Iteration: 1  Instance: /top_tb
 # 1
 # Break in Module top_tb at C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v line 57
+add wave -position insertpoint  \
+sim:/top_tb/DUT/FIR_17/acc_r
 add wave -position insertpoint  \
 sim:/top_tb/DUT/FIR_17/sum_r
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run -all
+run
 # File was opened successfully : -2147483645
 # File was opened successfully : -2147483644
-# ** Note: $finish    : C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v(57)
-#    Time: 4020 ps  Iteration: 1  Instance: /top_tb
-# 1
-# Break in Module top_tb at C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v line 57
+run
+add list  \
+{sim:/top_tb/DUT/FIR_17/acc_r[0]} \
+{sim:/top_tb/DUT/FIR_17/acc_r[1]} \
+{sim:/top_tb/DUT/FIR_17/acc_r[2]} \
+{sim:/top_tb/DUT/FIR_17/acc_r[3]} \
+{sim:/top_tb/DUT/FIR_17/acc_r[4]} \
+{sim:/top_tb/DUT/FIR_17/acc_r[5]} \
+{sim:/top_tb/DUT/FIR_17/acc_r[6]} \
+{sim:/top_tb/DUT/FIR_17/acc_r[7]} \
+{sim:/top_tb/DUT/FIR_17/acc_r[8]} \
+{sim:/top_tb/DUT/FIR_17/acc_r[9]} \
+{sim:/top_tb/DUT/FIR_17/acc_r[10]} \
+{sim:/top_tb/DUT/FIR_17/acc_r[11]} \
+{sim:/top_tb/DUT/FIR_17/acc_r[12]} \
+{sim:/top_tb/DUT/FIR_17/acc_r[13]} \
+{sim:/top_tb/DUT/FIR_17/acc_r[14]} \
+{sim:/top_tb/DUT/FIR_17/acc_r[15]} \
+{sim:/top_tb/DUT/FIR_17/acc_r[16]}
 do top.do
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 # -- Compiling module top
@@ -174,10 +191,10 @@ do top.do
 # 
 # Top level modules:
 # 	split_data
-# End time: 18:40:07 on Mar 16,2023, Elapsed time: 0:10:22
+# End time: 20:07:56 on Mar 16,2023, Elapsed time: 0:21:41
 # Errors: 0, Warnings: 1
 # vsim -gui work.top_tb 
-# Start time: 18:40:07 on Mar 16,2023
+# Start time: 20:07:56 on Mar 16,2023
 # Loading work.top_tb
 # Loading work.top
 # Loading work.merge_data
@@ -186,74 +203,9 @@ do top.do
 # Loading work.fir_17
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: David  Hostname: DESKTOP-2A41VS7  ProcessID: 9920
-#           Attempting to use alternate WLF file "./wlfttherzi".
+#           Attempting to use alternate WLF file "./wlft0vby7f".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlfttherzi
-# File was opened successfully : -2147483645
-# File was opened successfully : -2147483644
-# ** Note: $finish    : C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v(57)
-#    Time: 4020 ps  Iteration: 1  Instance: /top_tb
-# 1
-# Break in Module top_tb at C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v line 57
-add wave -position insertpoint  \
-sim:/top_tb/DUT/FIR_17/data_i
-restart
-do top.do
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# -- Compiling module top
-# 
-# Top level modules:
-# 	top
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# -- Compiling module top_tb
-# 
-# Top level modules:
-# 	top_tb
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# -- Compiling module avg_128
-# 
-# Top level modules:
-# 	avg_128
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# -- Compiling module conj_c_mult
-# 
-# Top level modules:
-# 	conj_c_mult
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# -- Compiling module fir_17
-# 
-# Top level modules:
-# 	fir_17
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# -- Compiling module pkg_detect
-# 
-# Top level modules:
-# 	pkg_detect
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# -- Compiling module merge_data
-# 
-# Top level modules:
-# 	merge_data
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# -- Compiling module split_data
-# 
-# Top level modules:
-# 	split_data
-# End time: 18:46:15 on Mar 16,2023, Elapsed time: 0:06:08
-# Errors: 0, Warnings: 3
-# vsim -gui work.top_tb 
-# Start time: 18:46:15 on Mar 16,2023
-# Loading work.top_tb
-# Loading work.top
-# Loading work.merge_data
-# Loading work.conj_c_mult
-# Loading work.avg_128
-# Loading work.fir_17
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: David  Hostname: DESKTOP-2A41VS7  ProcessID: 9920
-#           Attempting to use alternate WLF file "./wlft5981qc".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft5981qc
+#           Using alternate file: ./wlft0vby7f
 # File was opened successfully : -2147483645
 # File was opened successfully : -2147483644
 # ** Note: $finish    : C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v(57)
@@ -301,10 +253,10 @@ do top.do
 # 
 # Top level modules:
 # 	split_data
-# End time: 18:47:06 on Mar 16,2023, Elapsed time: 0:00:51
+# End time: 20:12:29 on Mar 16,2023, Elapsed time: 0:04:33
 # Errors: 0, Warnings: 3
 # vsim -gui work.top_tb 
-# Start time: 18:47:06 on Mar 16,2023
+# Start time: 20:12:29 on Mar 16,2023
 # Loading work.top_tb
 # Loading work.top
 # Loading work.merge_data
@@ -313,14 +265,12 @@ do top.do
 # Loading work.fir_17
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: David  Hostname: DESKTOP-2A41VS7  ProcessID: 9920
-#           Attempting to use alternate WLF file "./wlftfaafyq".
+#           Attempting to use alternate WLF file "./wlftj3y0ji".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftfaafyq
+#           Using alternate file: ./wlftj3y0ji
 # File was opened successfully : -2147483645
 # File was opened successfully : -2147483644
 # ** Note: $finish    : C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v(57)
 #    Time: 4020 ps  Iteration: 1  Instance: /top_tb
 # 1
 # Break in Module top_tb at C:/Users/David/Documents/GitHub/FM-Demodulator/Module/Top/top_tb.v line 57
-# End time: 19:26:56 on Mar 16,2023, Elapsed time: 0:39:50
-# Errors: 0, Warnings: 3
