@@ -58,7 +58,7 @@ always @(*) begin
     end
 end
 
-assign data_o = (sum[19]) 	? (data_i_r - (sum >>> 7) - 1) : (data_i_r - (sum >>> 7)) ;
+assign data_o = (sum_r[19]) 	? (data_i_r - (sum_r >>> 7) - 1) : (data_i_r - (sum_r >>> 7)) ;
 //assign data_o = (data_i_r - (sum >>> 7));  /* Wenn jetztiges Sample mit betrachtet wird*/
 //assign data_o = data_i_r - mean_r; /* Ohne das jetzige Sample */
 
