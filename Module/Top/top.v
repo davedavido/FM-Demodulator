@@ -60,7 +60,7 @@ avg_128 AVG_128(
 .start_i			(start_i),
 .merge_finished_i	(merge_finished),
 .data_i				(mult_to_avg),
-.data_o				(data_o)
+.data_o				(avg_to_fir)
 );
 
 fir_17 FIR_17(
@@ -69,7 +69,7 @@ fir_17 FIR_17(
 .start_i			(start_i),
 .merge_finished_i 	(merge_finished),
 .data_i				(avg_to_fir),
-.data_o				(fir_to_split)
+.data_o				(data_o)
 ); 
 
 /* split_data SPLIT_DATA(

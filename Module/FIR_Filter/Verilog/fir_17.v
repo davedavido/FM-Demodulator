@@ -36,13 +36,13 @@ reg signed [WIDTH-1:0] h_16;
 /*Buffer*/ 
 reg signed [WIDTH-1:0] buff [0:16];
 
-/*Multiply Stage 16-Bit * 1.15 = 32-Bit*/
-reg signed [2*WIDTH-1:0] acc [0:16];
-reg signed [2*WIDTH-1:0] acc_r [0:16];
+/*Multiply Stage 16-Bit * 0.16 = 32-Bit*/
+reg signed [2*WIDTH:0] acc [0:16];
+reg signed [2*WIDTH:0] acc_r [0:16];
 
 /*Adder Stage*/
-reg signed[2*WIDTH-1:0] sum;
-reg signed[2*WIDTH-1:0] sum_r;
+reg signed[2*WIDTH+3:0] sum;   //36-Bit for adding 16 32-Bit Vals
+reg signed[2*WIDTH+3:0] sum_r; //36-Bit for adding 16 32-Bit Vals
 
 always @ (posedge clk) begin
         if (rst) begin
@@ -109,51 +109,50 @@ always @ (posedge clk) begin
         end
 
         else begin
+		  
+				sum_r <= sum;
           
             /* Update Buffer if data_i valid */
-			if (merge_finished_i) begin
-				buff[0]  <= data_i;
-				buff[1]  <= buff[0];        
-				buff[2]  <= buff[1];         
-				buff[3]  <= buff[2];      
-				buff[4]  <= buff[3];      
-				buff[5]  <= buff[4];       
-				buff[6]  <= buff[5];    
-				buff[7]  <= buff[6];       
-				buff[8]  <= buff[7];       
-				buff[9]  <= buff[8];       
-				buff[10] <= buff[9];        
-				buff[11] <= buff[10];       
-				buff[12] <= buff[11];       
-				buff[13] <= buff[12];       
-				buff[14] <= buff[13];
-				buff[15] <= buff[14];
-				buff[16] <= buff[15]; 
-			end
+				if (merge_finished_i & start_i) begin
+					buff[0]  <= data_i;
+					buff[1]  <= buff[0];        
+					buff[2]  <= buff[1];         
+					buff[3]  <= buff[2];      
+					buff[4]  <= buff[3];      
+					buff[5]  <= buff[4];       
+					buff[6]  <= buff[5];    
+					buff[7]  <= buff[6];       
+					buff[8]  <= buff[7];       
+					buff[9]  <= buff[8];       
+					buff[10] <= buff[9];        
+					buff[11] <= buff[10];       
+					buff[12] <= buff[11];       
+					buff[13] <= buff[12];       
+					buff[14] <= buff[13];
+					buff[15] <= buff[14];
+					buff[16] <= buff[15]; 
+				end
 			
 			
 
            /* Register Multiplication */
-            acc_r[0]    <= acc[0];
-            acc_r[1]    <= acc[1];
-            acc_r[2]    <= acc[2];
-            acc_r[3]    <= acc[3];
-            acc_r[4]    <= acc[4];
-            acc_r[5]    <= acc[5];
-            acc_r[6]    <= acc[6];
-            acc_r[7]    <= acc[7];
-            acc_r[8]    <= acc[8];
-            acc_r[9]    <= acc[9];
-            acc_r[10]   <= acc[10];
-            acc_r[11]   <= acc[11];
-            acc_r[12]   <= acc[12];
-            acc_r[13]   <= acc[13];
-            acc_r[14]   <= acc[14];
-            acc_r[15]   <= acc[15];
-            acc_r[16]   <= acc[16];
-
-            /* Register Sum Output*/
-            sum_r <= sum;
+					acc_r[0]    <= acc[0];
+					acc_r[1]    <= acc[1];
+					acc_r[2]    <= acc[2];
+					acc_r[3]    <= acc[3];
+					acc_r[4]    <= acc[4];
+					acc_r[5]    <= acc[5];
+					acc_r[6]    <= acc[6];
+					acc_r[7]    <= acc[7];
+					acc_r[8]    <= acc[8];
+					acc_r[9]    <= acc[9];
+					acc_r[10]   <= acc[10];
+					acc_r[11]   <= acc[11];
+					acc_r[12]   <= acc[12];
+					acc_r[13]   <= acc[13];
+					acc_r[14]   <= acc[14];
+					acc_r[15]   <= acc[15];
+					acc_r[16]   <= acc[16];
         end
     end
 
@@ -181,7 +180,7 @@ always @ (*)begin
 	acc[15]= acc_r[15]; 
 	acc[16]= acc_r[16]; 
 	
-    if (start_i) begin
+    if (merge_finished_i & start_i) begin
 	
         /* Multiply Stage */
         acc[0]    = h_0 * buff[0];
@@ -210,6 +209,6 @@ end
 
 /* Output Format = 16.0 */
 
-assign data_o = (sum_r[31]) 	? ((sum_r >>> 16) + 1) : (sum_r >>> 16) ;
+assign data_o = (sum_r[35]) ? ((sum_r >>> 16) + 1 ) : (sum_r >> 16) ;
 
 endmodule
