@@ -1,15 +1,15 @@
-Analysis & Synthesis Status : Successful - Thu Mar 16 21:12:44 2023
+Analysis & Synthesis Status : Successful - Fri Mar 17 16:32:49 2023
 Quartus Prime Version : 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 Revision Name : fm_demodulator
 Top-level Entity Name : uart_loopback
 Family : MAX 10
-Total logic elements : 8,632
-    Total combinational functions : 5,158
-    Dedicated logic registers : 5,044
-Total registers : 5044
-Total pins : 4
+Total logic elements : 7,955
+    Total combinational functions : 4,822
+    Dedicated logic registers : 4,556
+Total registers : 4556
+Total pins : 5
 Total virtual pins : 0
-Total memory bits : 266,240
+Total memory bits : 12,544
 Embedded Multiplier 9-bit elements : 4
 Total PLLs : 1
 UFM blocks : 0

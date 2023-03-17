@@ -1,12 +1,12 @@
-Power Analyzer Status : Successful - Thu Mar 16 21:13:16 2023
+Power Analyzer Status : Successful - Fri Mar 17 16:33:19 2023
 Quartus Prime Version : 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 Revision Name : fm_demodulator
 Top-level Entity Name : uart_loopback
 Family : MAX 10
 Device : 10M08SAU169C8G
 Power Models : Final
-Total Thermal Power Dissipation : 144.33 mW
-Core Dynamic Thermal Power Dissipation : 9.06 mW
-Core Static Thermal Power Dissipation : 121.06 mW
-I/O Thermal Power Dissipation : 14.21 mW
+Total Thermal Power Dissipation : 135.49 mW
+Core Dynamic Thermal Power Dissipation : 4.91 mW
+Core Static Thermal Power Dissipation : 121.03 mW
+I/O Thermal Power Dissipation : 9.55 mW
 Power Estimation Confidence : Low: user provided insufficient toggle rate data

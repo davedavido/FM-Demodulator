@@ -14,35 +14,35 @@ input signed [WIDTH-1:0] data_i;
 output wire signed [WIDTH-1:0] data_o;
 
 /* Intern */
-/* FIR-Filter Taps 0.17*/
-reg signed [WIDTH:0] h_0 ; 
-reg signed [WIDTH:0] h_1 ;     
-reg signed [WIDTH:0] h_2 ;    
-reg signed [WIDTH:0] h_3 ; 
-reg signed [WIDTH:0] h_4 ;      
-reg signed [WIDTH:0] h_5 ;      
-reg signed [WIDTH:0] h_6 ;      
-reg signed [WIDTH:0] h_7 ;      
-reg signed [WIDTH:0] h_8 ;     
-reg signed [WIDTH:0] h_9 ; 
-reg signed [WIDTH:0] h_10;     
-reg signed [WIDTH:0] h_11;     
-reg signed [WIDTH:0] h_12; 
-reg signed [WIDTH:0] h_13;
-reg signed [WIDTH:0] h_14; 
-reg signed [WIDTH:0] h_15;
-reg signed [WIDTH:0] h_16;
+/* FIR-Filter Taps 0.16*/
+reg signed [WIDTH-1:0] h_0 ; 
+reg signed [WIDTH-1:0] h_1 ;     
+reg signed [WIDTH-1:0] h_2 ;    
+reg signed [WIDTH-1:0] h_3 ; 
+reg signed [WIDTH-1:0] h_4 ;      
+reg signed [WIDTH-1:0] h_5 ;      
+reg signed [WIDTH-1:0] h_6 ;      
+reg signed [WIDTH-1:0] h_7 ;      
+reg signed [WIDTH-1:0] h_8 ;     
+reg signed [WIDTH-1:0] h_9 ; 
+reg signed [WIDTH-1:0] h_10;     
+reg signed [WIDTH-1:0] h_11;     
+reg signed [WIDTH-1:0] h_12; 
+reg signed [WIDTH-1:0] h_13;
+reg signed [WIDTH-1:0] h_14; 
+reg signed [WIDTH-1:0] h_15;
+reg signed [WIDTH-1:0] h_16;
 
 /*Buffer*/ 
 reg signed [WIDTH-1:0] buff [0:16];
 
-/*Multiply Stage 16-Bit * 0.17 = 33-Bit*/
-reg signed [2*WIDTH:0] acc [0:16];
-reg signed [2*WIDTH:0] acc_r [0:16];
+/*Multiply Stage 16-Bit * 0.16 = 32-Bit*/
+reg signed [2*WIDTH-1:0] acc [0:16];
+reg signed [2*WIDTH-1:0] acc_r [0:16];
 
 /*Adder Stage*/
-reg signed[2*WIDTH+4:0] sum;   //37-Bit for adding 16 33-Bit Vals
-reg signed[2*WIDTH+4:0] sum_r; //37-Bit for adding 16 33-Bit Vals
+reg signed[2*WIDTH+3:0] sum;   //36-Bit for adding 16 33-Bit Vals
+reg signed[2*WIDTH+3:0] sum_r; //36-Bit for adding 16 33-Bit Vals
 
 always @ (posedge clk) begin
         if (rst) begin
@@ -105,6 +105,7 @@ always @ (posedge clk) begin
             h_14 = 16'd481;
             h_15 = 16'd188;
             h_16 = 16'd83;
+				*/
 				
 				h_0  = 16'd166;
             h_1  = 16'd376;			
@@ -122,9 +123,9 @@ always @ (posedge clk) begin
             h_13 = 16'd2062;
             h_14 = 16'd964;
             h_15 = 16'd376;
-            h_16 = 16'd166;*/
+            h_16 = 16'd166;
 				
-				
+				/*
 				h_0  = 17'd332;
             h_1  = 17'd752;			
             h_2  = 17'd1927;
@@ -141,7 +142,7 @@ always @ (posedge clk) begin
             h_13 = 17'd4123;
             h_14 = 17'd1927;
             h_15 = 17'd752;
-            h_16 = 17'd332;
+            h_16 = 17'd332;*/
                        
         end
 
@@ -246,6 +247,6 @@ end
 
 /* Output Format = 16.0 */
 
-assign data_o = (sum_r[36]) ? ((sum_r >>> 17) + 1 ) : (sum_r >>> 17) ;
+assign data_o = (sum_r[35]) ? ((sum_r >>> 16) + 1 ) : (sum_r >>> 16) ;
 
 endmodule

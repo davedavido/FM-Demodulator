@@ -29,7 +29,7 @@
  --                 of its bank.
  --                  Bank 1A:       2.5V
  --                  Bank 1B:       2.5V
- --                  Bank 2:       3.3V
+ --                  Bank 2:       2.5V
  --                  Bank 3:       2.5V
  --                  Bank 5:       2.5V
  --                  Bank 6:       2.5V
@@ -163,7 +163,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : H1        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : H2        :        :                   :         : 1B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H3        :        :                   :         : 1B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H4        :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : H5        :        :                   :         : 2         :                
+auto_stp_external_clock_0    : H5        : input  : 2.5 V             :         : 2         : N              
 clk                          : H6        : input  : 3.3-V LVTTL       :         : 2         : Y              
 VCC_ONE                      : H7        : power  :                   : 3.0V/3.3V :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H8        :        :                   :         : 5         :                
@@ -174,7 +174,7 @@ GND                          : H12       : gnd    :                   :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : H13       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : J1        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : J2        :        :                   :         : 2         :                
-VCCIO2                       : J3        : power  :                   : 3.3V    : 2         :                
+VCCIO2                       : J3        : power  :                   : 2.5V    : 2         :                
 GND                          : J4        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : J5        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : J6        :        :                   :         : 3         :                
@@ -187,7 +187,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : J12       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : J13       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : K1        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : K2        :        :                   :         : 2         :                
-VCCIO2                       : K3        : power  :                   : 3.3V    : 2         :                
+VCCIO2                       : K3        : power  :                   : 2.5V    : 2         :                
 VCCA1                        : K4        : power  :                   : 3.0V/3.3V :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : K5        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : K6        :        :                   :         : 3         :                
