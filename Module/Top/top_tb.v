@@ -26,7 +26,7 @@ always
 	 
 initial begin
 	fd_i = $fopen("Input_Bytes.txt", "r");
-	fd_o = $fopen("Output_Split_Data.txt", "w");
+	fd_o = $fopen("Output_Data.txt", "w");
 	
 	if (fd_i)     $display("File was opened successfully : %0d", fd_i);
     else      	  $display("File was NOT opened successfully : %0d", fd_i);

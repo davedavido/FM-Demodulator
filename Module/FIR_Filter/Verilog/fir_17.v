@@ -14,6 +14,7 @@ input signed [WIDTH-1:0] data_i;
 output wire signed [WIDTH-1:0] data_o;
 
 /* Intern */
+
 /* FIR-Filter Taps*/
 reg signed [WIDTH-1:0] h_0 ; 
 reg signed [WIDTH-1:0] h_1 ;     
@@ -37,12 +38,12 @@ reg signed [WIDTH-1:0] h_16;
 reg signed [WIDTH-1:0] buff [0:16];
 
 /*Multiply Stage 16-Bit * 0.16 = 32-Bit*/
-reg signed [2*WIDTH:0] acc [0:16];
-reg signed [2*WIDTH:0] acc_r [0:16];
+reg signed [2*WIDTH-1:0] acc [0:16];
+reg signed [2*WIDTH-1:0] acc_r [0:16];
 
 /*Adder Stage*/
-reg signed[2*WIDTH+3:0] sum;   //36-Bit for adding 16 32-Bit Vals
-reg signed[2*WIDTH+3:0] sum_r; //36-Bit for adding 16 32-Bit Vals
+reg signed[2*WIDTH+3:0] sum;   /*36-Bit for adding 16 33-Bit Vals*/
+reg signed[2*WIDTH+3:0] sum_r; /*36-Bit for adding 16 33-Bit Vals*/
 
 always @ (posedge clk) begin
         if (rst) begin
@@ -87,24 +88,26 @@ always @ (posedge clk) begin
             acc_r[15] <= 0;
             acc_r[16] <= 0;
             
-            /* Set Coeffs FKF 1.15 - Cutoff: 10kHz fs: 200kHz*/
-            h_0  = 16'd83;
-            h_1  = 16'd188;			
-            h_2  = 16'd481;  
-            h_3  = 16'd1030;
-            h_4  = 16'd1818;   
-            h_5  = 16'd2734;  
-            h_6  = 16'd3600;  
-            h_7  = 16'd4222; 
-            h_8  = 16'd4448;   
-            h_9  = 16'd4222;
-            h_10 = 16'd3600;  
-            h_11 = 16'd2734;   
-            h_12 = 16'd1818;
-            h_13 = 16'd1030;
-            h_14 = 16'd481;
-            h_15 = 16'd188;
-            h_16 = 16'd83;
+            /* Set Coeffs FKF 1.15 - Cutoff: 10kHz fs: 200kH*/
+				
+				h_0  = 16'd166;
+            h_1  = 16'd376;			
+            h_2  = 16'd964;
+            h_3  = 16'd2062;
+            h_4  = 16'd3636;  
+            h_5  = 16'd5468; 
+            h_6  = 16'd7202; 
+            h_7  = 16'd8445;
+            h_8  = 16'd8897;  
+            h_9  = 16'd8445;
+            h_10 = 16'd7202; 
+            h_11 = 16'd5468;  
+            h_12 = 16'd3636;
+            h_13 = 16'd2062;
+            h_14 = 16'd964;
+            h_15 = 16'd376;
+            h_16 = 16'd166;
+				
                        
         end
 
@@ -201,14 +204,14 @@ always @ (*)begin
         acc[15]   = h_15 * buff[15];
         acc[16]   = h_16 * buff[16];
 
-        /* Accumulate stage of FIR */
-		sum = acc_r[0]  +  acc_r[1]  +  acc_r[2]  +  acc_r[3]  +  acc_r[4]  +  acc_r[5]  +  acc_r[6]  +  acc_r[7]  +  acc_r[8]  +  acc_r[9]  +  acc_r[10] +  acc_r[11] +  acc_r[12] +  acc_r[13] +  acc_r[14] +  acc_r[15] +  acc_r[16];
+        /* Accumulate stage des FIR */
+			sum = acc_r[0]  +  acc_r[1]  +  acc_r[2]  +  acc_r[3]  +  acc_r[4]  +  acc_r[5]  +  acc_r[6]  +  acc_r[7]  +  acc_r[8]  +  acc_r[9]  +  acc_r[10] +  acc_r[11] +  acc_r[12] +  acc_r[13] +  acc_r[14] +  acc_r[15] +  acc_r[16];
 		
     end
 end 
 
-/* Output Format = 16.0 */
+/* Output Format = 16.0, Offset Korrektur durch Shiften negativer Zahlen */
 
-assign data_o = (sum_r[35]) ? ((sum_r >>> 15) + 1 ) : (sum_r >>> 15) ;
+assign data_o = (sum_r[35]) ? ((sum_r >>> 16) + 1 ) : (sum_r >>> 16) ;
 
 endmodule

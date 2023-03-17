@@ -1,5 +1,5 @@
 module split_data #(parameter WIDTH = 16) (clk, 
-            rst,
+         rst,
 			start_i,
 			merge_finished_i,
 			data_i,
@@ -10,14 +10,15 @@ input clk, rst;
 input start_i, merge_finished_i;
 input signed [WIDTH-1:0] data_i;
 
-output [7:0] data_uart_o;
+output [7:0] data_uart_o;	
 
+/*Intern*/
 
 /*Buffer*/
-reg			[7:0] buff [0:3];		
-
-reg			[1:0] count_r, count;                    // Zähler für die Anzahl der Samples
-
+reg			[7:0] buff [0:3];	
+	
+/* Zähler zu Übertragung der Bytes aus dem Buffer*/
+reg			[1:0] count_r, count;                    
 
 always @ (posedge clk) begin
 
@@ -28,18 +29,18 @@ always @ (posedge clk) begin
             buff[2]<= 0;       
             buff[3]<= 0; 
 			
-			count_r <= 0;
+				count_r <= 0;
 		end
 		
 		else begin
-			
+
 			count_r  <= count;
-			
+
 			if (merge_finished_i) begin
 				/* Update Buffer */
-				buff[0]  <= 0; /*High Byte*/ 
+				buff[0]  <= 0; 
 				buff[1]  <= 0;    
-				buff[2]  <= data_i[15:8];      
+				buff[2]  <= data_i[15:8]; /*High Byte*/     
 				buff[3]  <= data_i[7:0];  /*Low Byte*/  
 			end
 		end 
@@ -47,13 +48,13 @@ end
 
 always @(*) begin
 	count = count_r;
-	
 	if (start_i) begin
 		count = count_r + 1;
 	end
 end		
 
-assign data_uart_o = {buff[count_r]};  /*Sends Highest Byte first*/
+/*Sends Highest Byte first*/
+assign data_uart_o = {buff[count_r]};  
 
 
 endmodule

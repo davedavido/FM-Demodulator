@@ -12,12 +12,13 @@ input signed [WIDTH-1:0] data_i;
 
 output [7:0] data_uart_o;	
 
+/*Intern*/
 
 /*Buffer*/
-reg			[7:0] buff [0:3];		
-
-reg			[1:0] count_r, count;                    // Zähler für die Anzahl der Samples
-
+reg			[7:0] buff [0:3];	
+	
+/* Zähler zu Übertragung der Bytes aus dem Buffer*/
+reg			[1:0] count_r, count;                    
 
 always @ (posedge clk) begin
 
@@ -52,7 +53,8 @@ always @(*) begin
 	end
 end		
 
-assign data_uart_o = {buff[count_r]};  /*Sends Lowest Byte first*/
+/*Sends Highest Byte first*/
+assign data_uart_o = {buff[count_r]};  
 
 
 endmodule

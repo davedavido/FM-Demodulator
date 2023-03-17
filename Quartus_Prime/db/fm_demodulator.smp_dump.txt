@@ -1,5 +1,5 @@
 
-State Machine - |uart_loopback|uart_tx:TX|current_state
+State Machine - |fm_demod|uart_tx:TX|current_state
 Name current_state.STOP2 current_state.WI current_state.W7 current_state.W6 current_state.W5 current_state.W4 current_state.W3 current_state.W2 current_state.W1 current_state.W0 current_state.STOP current_state.B7 current_state.B6 current_state.B5 current_state.B4 current_state.B3 current_state.B2 current_state.B1 current_state.B0 current_state.IDLE 
 current_state.IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 current_state.B0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
@@ -22,7 +22,7 @@ current_state.W7 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
 current_state.WI 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
 current_state.STOP2 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
 
-State Machine - |uart_loopback|uart_rx:RX|current_state
+State Machine - |fm_demod|uart_rx:RX|current_state
 Name current_state.WI current_state.W7 current_state.W6 current_state.W5 current_state.W4 current_state.W3 current_state.W2 current_state.W1 current_state.W0 current_state.STOP current_state.B7 current_state.B6 current_state.B5 current_state.B4 current_state.B3 current_state.B2 current_state.B1 current_state.B0 current_state.IDLE 
 current_state.IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 current_state.B0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 

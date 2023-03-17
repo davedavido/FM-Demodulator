@@ -1,4 +1,4 @@
-module uart_loopback(
+module fm_demod(
 	clk,
 	btn_i,
 	uart_i,

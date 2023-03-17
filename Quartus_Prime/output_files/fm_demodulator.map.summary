@@ -1,7 +1,7 @@
-Analysis & Synthesis Status : Successful - Fri Mar 17 16:32:49 2023
+Analysis & Synthesis Status : Successful - Fri Mar 17 19:45:31 2023
 Quartus Prime Version : 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 Revision Name : fm_demodulator
-Top-level Entity Name : uart_loopback
+Top-level Entity Name : fm_demod
 Family : MAX 10
 Total logic elements : 7,955
     Total combinational functions : 4,822

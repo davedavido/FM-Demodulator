@@ -1,16 +1,16 @@
-|uart_loopback
+|fm_demod
 clk => clk.IN1
 btn_i => rst_p.IN7
 uart_i => uart_i.IN1
 uart_o <= uart_tx:TX.uart_o
 
 
-|uart_loopback|logic_pll:PLL
+|fm_demod|logic_pll:PLL
 inclk0 => sub_wire1[0].IN1
 c0 <= altpll:altpll_component.clk
 
 
-|uart_loopback|logic_pll:PLL|altpll:altpll_component
+|fm_demod|logic_pll:PLL|altpll:altpll_component
 inclk[0] => logic_pll_altpll:auto_generated.inclk[0]
 inclk[1] => logic_pll_altpll:auto_generated.inclk[1]
 fbin => ~NO_FANOUT~
@@ -70,7 +70,7 @@ fref <= <GND>
 icdrclk <= <GND>
 
 
-|uart_loopback|logic_pll:PLL|altpll:altpll_component|logic_pll_altpll:auto_generated
+|fm_demod|logic_pll:PLL|altpll:altpll_component|logic_pll_altpll:auto_generated
 clk[0] <= pll1.CLK
 clk[1] <= pll1.CLK1
 clk[2] <= pll1.CLK2
@@ -80,7 +80,7 @@ inclk[0] => pll1.CLK
 inclk[1] => pll1.CLK1
 
 
-|uart_loopback|uart_rx:RX
+|fm_demod|uart_rx:RX
 clk => uart_data_r[0].CLK
 clk => uart_data_r[1].CLK
 clk => uart_data_r[2].CLK
@@ -132,7 +132,7 @@ uart_data_o[7] <= uart_data_r[7].DB_MAX_OUTPUT_PORT_TYPE
 valid_o <= valid_o.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|uart_loopback|uart_tx:TX
+|fm_demod|uart_tx:TX
 clk => valid_r.CLK
 clk => uart_data_input_r[0].CLK
 clk => uart_data_input_r[1].CLK
@@ -201,7 +201,7 @@ valid_i => valid_r.DATAA
 ready_o <= Selector8.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|uart_loopback|merge_data:MERGE
+|fm_demod|merge_data:MERGE
 clk => merge_finished_r.CLK
 clk => count_r[0].CLK
 clk => count_r[1].CLK
@@ -350,7 +350,7 @@ data_o[30] <= buff[3][6].DB_MAX_OUTPUT_PORT_TYPE
 data_o[31] <= buff[3][7].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|uart_loopback|conj_c_mult:MULT
+|fm_demod|conj_c_mult:MULT
 clk => k3_r[0].CLK
 clk => k3_r[1].CLK
 clk => k3_r[2].CLK
@@ -723,7 +723,7 @@ demod_o[14] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
 demod_o[15] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|uart_loopback|avg_128:AVG
+|fm_demod|avg_128:AVG
 clk => buff[127][0].CLK
 clk => buff[127][1].CLK
 clk => buff[127][2].CLK
@@ -4942,7 +4942,7 @@ data_o[14] <= data_o.DB_MAX_OUTPUT_PORT_TYPE
 data_o[15] <= data_o.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|uart_loopback|fir_17:FIR
+|fm_demod|fir_17:FIR
 clk => h_16[0].CLK
 clk => h_16[1].CLK
 clk => h_16[2].CLK
@@ -7195,7 +7195,7 @@ data_o[14] <= data_o.DB_MAX_OUTPUT_PORT_TYPE
 data_o[15] <= data_o.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|uart_loopback|split_data:SPLIT
+|fm_demod|split_data:SPLIT
 clk => count_r[0].CLK
 clk => count_r[1].CLK
 clk => buff[3][0].CLK

@@ -13,10 +13,13 @@ input [7:0] data_uart_i;
 output merge_finished_o;
 output [2*WIDTH-1:0] data_o;
 
+/*Intern*/
+
 /*Buffer*/
 reg 	[7:0] buff [0:3];		
 
-reg			[1:0] count_r, count;                    // Zähler für die Anzahl der Samples
+/* Zähler zur Detektion eines vollständigen Eingangssamples*/
+reg			[1:0] count_r, count;                   
 
 reg merge_finished_r, merge_finished;
 
@@ -34,11 +37,11 @@ always @ (posedge clk) begin
 		end
 		
 		else begin
-				merge_finished_r <= merge_finished;
-				count_r  <= count;
+				merge_finished_r 	<= merge_finished;
+				count_r  			<= count;
 				
 				if (start_i) begin
-				/* Update Buffer */
+					/* Update Buffer */
 					buff[0]  <= data_uart_i;
 					buff[1]  <= buff[0];        
 					buff[2]  <= buff[1];         
@@ -52,16 +55,18 @@ always @(*) begin
 	merge_finished = merge_finished_r;
 	
 	if (start_i) begin
-		count = count_r +1;
-		if (count_r == 3) begin  //1 Sample Verzögert zu Count//
+		count = count_r + 1;
+		if (count_r == 3) begin  
 			merge_finished = 1;
 		end
 		else begin
 			merge_finished = 0; 
 		end
 	end
-end		
-
-assign data_o = {buff[3], buff[2], buff[1], buff[0]};  /* MSB comes first -Last in Buffer*/
+end	
+	
+/* MSB comes first -Last in Buffer*/
+assign data_o = {buff[3], buff[2], buff[1], buff[0]};
+  
 assign merge_finished_o = merge_finished_r;
 endmodule				

@@ -1,4 +1,4 @@
-module uart_loopback(
+module fm_demod(
 	clk,
 	btn_i,
 	uart_i,
@@ -15,22 +15,24 @@ wire 	[7:0]				uart_rx;
 wire  [7:0]				uart_tx;
 wire 						clk_logic;
 wire 						uart_rx_valid;
+wire						merge_finished;
 reg 						uart_tx_send;
 
 wire [31:0]				data_complex;
+wire [15:0]				mult_to_avg, avg_to_fir, fir_to_split;
 
-// Reset Definition ////////
+/* Reset Definition */
 wire 						rst_p;
-assign 					rst_p = ~btn_i; // user button is high if not pressed
+assign 					rst_p = ~btn_i; /* user button is high if not pressed*/
 
-/// PLL Instantiation //////
+/* PLL Instantiation */
 logic_pll PLL(
 	.inclk0(clk),
 	.c0(clk_logic)
 );
 
 
-/// UART Rx Instantiation ////
+/* UART Rx Instantiation */
 uart_rx RX(
 	.clk				(clk_logic),
 	.rst				(rst_p),
@@ -39,7 +41,7 @@ uart_rx RX(
 	.valid_o			(uart_rx_valid)
 	);
 
-/// UART Tx Instantiation ////
+/* UART Tx Instantiation */
 uart_tx TX(
 	.clk				(clk_logic),
 	.rst				(rst_p),
@@ -47,7 +49,8 @@ uart_tx TX(
 	.uart_data_i	(uart_tx),
 	.valid_i			(uart_tx_send)
 	);
-	
+
+/* merge_data Instantiation */	
 merge_data MERGE(
 	.clk					(clk_logic),
 	.rst					(rst_p),
@@ -57,16 +60,48 @@ merge_data MERGE(
 	.data_o				(data_complex)
 );
 
+/* conj_c_mult Instantiation */
+conj_c_mult MULT(
+	.clk					(clk_logic),      
+   .rst					(rst_p),
+   .start_i				(uart_rx_valid),
+	.merge_finished_i	(merge_finished),				
+   .real_i				(data_complex[31:16]),
+	.imag_i				(data_complex[15:0]),
+   .demod_o				(mult_to_avg)
+);
+
+/* avg_128 Instantiation*/
+avg_128 AVG(
+	.clk					(clk_logic),
+	.rst					(rst_p),
+   .start_i				(uart_rx_valid),
+	.merge_finished_i	(merge_finished),	
+	.data_i				(mult_to_avg),
+	.data_o				(avg_to_fir)
+);
+
+/* fir_17 Instantiation*/
+fir_17 FIR(
+	.clk					(clk_logic),
+	.rst					(rst_p),
+   .start_i				(uart_rx_valid),
+	.merge_finished_i	(merge_finished),
+	.data_i				(avg_to_fir),
+	.data_o				(fir_to_split)
+);
+
+/* split_data Instantiation*/
 split_data SPLIT(
 	.clk					(clk_logic),
 	.rst					(rst_p),
 	.start_i				(uart_rx_valid),
 	.merge_finished_i	(merge_finished),
-	.data_i				(data_complex),
+	.data_i				(fir_to_split),
 	.data_uart_o		(uart_tx)
 );
 	
-/// Sequential Logic //////////
+/* Sequential Logic */
 	
 always @ (posedge clk_logic) begin
 	if(rst_p) begin // synchronous reset

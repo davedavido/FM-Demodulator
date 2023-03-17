@@ -70,16 +70,6 @@ fir_17 FIR_17(
 .merge_finished_i 	(merge_finished),
 .data_i				(avg_to_fir),
 .data_o				(data_o)
-); 
-
-/* split_data SPLIT_DATA(
-.clk				(clk),
-.rst				(rst),
-.start_i			(start_i),
-.merge_finished_i 	(merge_finished),
-.data_i				(fir_to_split),
-.data_uart_o		(data_o)
-);
-	 */		
+); 	
 			
 endmodule
